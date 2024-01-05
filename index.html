@@ -1,0 +1,1404 @@
+ <!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1, user-scalable=no, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="420">
+    
+    <meta name="referrer" content="origin-when-cross-origin">
+
+
+
+	<style>
+    @font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:400;src:url(fonts/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:400;src:url(fonts/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:400;src:url(fonts/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:400;src:url(fonts/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format("woff2");unicode-range:U+0370-03FF}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:400;src:url(fonts/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:400;src:url(fonts/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:400;src:url(fonts/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:500;src:url(fonts/KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:500;src:url(fonts/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:500;src:url(fonts/KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:500;src:url(fonts/KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2) format("woff2");unicode-range:U+0370-03FF}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:500;src:url(fonts/KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:500;src:url(fonts/KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:500;src:url(fonts/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:700;src:url(fonts/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:700;src:url(fonts/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:700;src:url(fonts/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:700;src:url(fonts/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format("woff2");unicode-range:U+0370-03FF}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:700;src:url(fonts/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:700;src:url(fonts/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:700;src:url(fonts/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"Saira Condensed";font-style:normal;font-display:swap;font-weight:700;src:url(fonts/EJRLQgErUN8XuHNEtX81i9TmEkrnGc5Q-K2fli0.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:"Saira Condensed";font-style:normal;font-display:swap;font-weight:700;src:url(fonts/EJRLQgErUN8XuHNEtX81i9TmEkrnGc5Q-a2fli0.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:"Saira Condensed";font-style:normal;font-display:swap;font-weight:700;src:url(fonts/EJRLQgErUN8XuHNEtX81i9TmEkrnGc5Q962f.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"Saira Condensed";font-style:normal;font-display:swap;font-weight:900;src:url(fonts/EJRLQgErUN8XuHNEtX81i9TmEkrnIcxQ-K2fli0.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:"Saira Condensed";font-style:normal;font-display:swap;font-weight:900;src:url(fonts/EJRLQgErUN8XuHNEtX81i9TmEkrnIcxQ-a2fli0.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:"Saira Condensed";font-style:normal;font-display:swap;font-weight:900;src:url(fonts/EJRLQgErUN8XuHNEtX81i9TmEkrnIcxQ962f.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+</style>
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+ 
+	<title>Datorită dietei creată de Bianca,Oana Radu a suferit o metamorfoză impresionantă!</title>
+	
+  <meta name="description" content="Datorită dietei creată de Bianca,Oana Radu a suferit o metamorfoză impresionantă!">
+   
+
+
+
+
+            <style>
+                :root {
+                    --svp-background-color: #0a0a0a;
+                    --svp-border-color: #d00906;
+                    --svp-text-color: #ffffff;
+                    --svp-highlight-color: #efb821;
+                }
+            </style>
+            <script type="936ae0b3af0c7d6f45be7c3b-text/javascript">
+                var svp_delay =  3;
+                var svp_cookie_minutes =  30;
+            </script>
+			<link rel="stylesheet" id="strawberry-slider-css" href="css/owl.carousel.css" type="text/css" media="all">
+			<link rel="stylesheet" id="" href="css/korobki.css" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="svp_enqueue_front_styles-css" href="css/style.css" type="text/css" media="all">
+
+<style>.seta__articles{display:grid;grid-template-columns:repeat(2,1fr);grid-gap:30px 10px;padding-top:10px;border-top:1px solid #ccc;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #ccc;overflow:hidden}@media (max-width:500px){.seta__articles{grid-template-columns:1fr;grid-gap:0}.seta__articles .seta__article:not(:last-of-type){padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #ccc}}@media (min-width:501px){.seta__articles .seta__article:not(:nth-of-type(-n+2)):before{content:"";display:block;height:1px;background-color:#ccc;width:110%;position:absolute;top:-15px;left:0}}.seta__articles .seta__article{flex-basis:100%;display:flex;gap:10px;position:relative}.seta__articles .seta__article .seta__media{max-width:100px;min-width:100px}.seta__articles .seta__article .seta__media img{max-width:100%;height:60px!important;object-fit:cover}.seta__articles .seta__article .seta__title{font-size:14px;font-weight:bold;line-height:1.3;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;line-clamp:3;-webkit-box-orient:vertical}#seta_placeholder{min-height:82px}@media(max-width:500px){#seta_placeholder{min-height:160px}}.seta__articles .seta__article .seta__title{font-family:"Saira Condensed",Arial,sans,sans-serif;font-size:16px;line-height:1.2}</style>
+
+<style>*{box-sizing:border-box}body{padding:0;margin:0;font-family:Roboto,Arial,sans,sans-serif}a,input{box-shadow:none;border:0;outline:0;background-color:transparent}a{text-decoration:none;color:inherit;border:0;outline:0}h1,h2,h3,h4,h5{font-weight:300;margin:0 0 1rem}h1{font-size:40px}h2{font-size:36px}h3{font-size:30px}h4{font-size:26px}h5{font-size:20px}p{line-height:1.35rem;margin:0 0 15px}img{display:block;max-width:100%;height:auto}strong{font-weight:600}.container{width:1160px;margin:0 auto;padding-left:10px;padding-right:10px;box-sizing:border-box}.row{display:flex;width:calc(100% + 20px);margin-left:-10px;flex-wrap:wrap}[class^=col]{padding:0 10px;margin-bottom:0;box-sizing:border-box;min-width:100%}@font-face{font-display:swap!important}.bg-white{background-color:#fff;border-radius:3px}.text-center{text-align:center}.video-wrapper{display:block;position:relative;padding-bottom:56.25%;height:0}.social ul{margin:0;padding:0;list-style:none;max-width:300px;display:flex}.social ul li{display:inline-block}.social ul li a{font-size:26px;display:block;width:30px;height:30px;text-align:center;line-height:30px;color:#000}.cta a{display:block;padding-top:10px;margin-top:10px;border-top:1px solid #efefef;font-size:14px;font-weight:700}.cta a:hover{color:#f37930}.sticky{position:-webkit-sticky;position:sticky;top:110px}@font-face{font-family:icomoon;src:url(fonts/icomoon.woff) format("woff");font-weight:400;font-style:normal;font-display:block}[class^=icon-]{font-family:icomoon!important;speak:never;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-cross:before{content:"\ea0f"}.icon-share2:before{content:"\ea82"}.icon-facebook:before{content:"\ea90"}.icon-instagram:before{content:"\ea92"}.icon-twitter:before{content:"\ea96"}.icon-youtube:before{content:"\ea9d"}.alignnone{margin:5px 20px 20px 0}.mg-bottom-5{margin-bottom:5px}.mg-right-10{margin-right:10px}.mg-bottom-10{margin-bottom:10px}.mg-left-10{margin-left:10px}.padding-10{padding:10px}.mg-top-20{margin-top:20px}.mg-bottom-20{margin-bottom:20px}.font-size-16{font-size:16px!important}.hidden{display:none!important}.relative{position:relative}.color--facebook{color:#365396}.bg--facebook{background-color:#365396}.bg--google_plus{background-color:#e0462e}.color--instagram{color:#386c99}.bg--instagram{background-color:#386c99}.color--twitter{color:#00a8f0}.bg--twitter{background-color:#00a8f0}.color--youtube{color:#f33}.bg--youtube{background-color:#f33}.bg--whatsapp{background-color:#25d366}.bg--x{background-color:#333}#header{background-color:#fff;color:#000;position:relative}#header a{color:#000}#header .top{border-bottom:1px solid rgba(255,255,255,.1);padding:20px 0}#header .logo{text-align:center}#header .logo .logosvg{fill:#d00906;height:60px}#header .social{position:absolute;right:50px;top:50%;transform:translateY(-50%)}#header .social ul li{margin-right:20px}#header .social ul li a{display:block;fill:#fff}#header .left{position:absolute;left:0;top:50%;transform:translateY(-50%)}#header .left .advertising{font:700 18px/1 "Saira Condensed",Arial,sans,sans-serif;text-align:left;padding:0 0 0 7px}#header .left .advertising a{color:#000}#header .left .tip{position:relative;padding-left:170px;text-align:left;min-height:45px}#header .left .tip .cta{font:26px/1 "Saira Condensed",Arial,sans,sans-serif;text-transform:uppercase;background-color:#d00906;color:#fff;border-radius:30px;padding:8px 20px;position:absolute;left:0;top:0}#header .left .tip .cta:hover{text-decoration:none}#header .left .tip .contact{font:18px/1 "Saira Condensed",Arial,sans,sans-serif;color:#000}#header .left .tip .contact:hover{text-decoration:none}.sticky-tape{position:-webkit-sticky;position:sticky;top:0;width:100%;z-index:999}#main-menu{background-color:#fff;border-top:3px solid #000;border-bottom:1px solid #000}#main-menu .menu ul{list-style:none;margin:0;display:flex;justify-content:space-between;padding:5px 0}#main-menu .menu ul li a{font:900 27px/1 "Saira Condensed",Arial,sans,sans-serif;display:block;letter-spacing:1px;text-transform:uppercase;padding:5px 10px;white-space:nowrap}.footer{background-color:#000;color:rgba(255,255,255,.8)}.footer section{padding-top:10px;border-top:2px solid rgba(255,255,255,.1)}.footer .menu{margin:0 0 0 0!important}.footer .menu ul{margin:0;padding:0;list-style:none;display:flex;justify-content:center;flex-wrap:wrap}.footer .menu ul li{margin:0 0 0 0!important;padding:0 10px 10px;position:relative;overflow:hidden}.footer .menu ul li a{position:relative;display:block;font-size:16px;font-weight:400;padding:5px 0;transition:background-color .3s}.footer .tip{position:relative;text-align:left;display:flex;align-items:center;padding-bottom:10px}.footer .tip .cta{font:900 35px/1 "Saira Condensed",Arial,sans,sans-serif;text-transform:uppercase;background-color:#d00906;color:#fff;padding:8px 20px;margin-right:20px}.footer .tip .cta:hover{text-decoration:none}.footer .tip .contact{font:900 30px/1.4 "Saira Condensed",Arial,sans,sans-serif;color:#fff;display:block;flex:1}.footer .tip .contact:hover{text-decoration:none}.footer .copyright{font:11px/1.2 Georgia,serif;color:rgba(255,255,255,.3);padding:20px 0}.footer .copyright p{margin:0}#live{position:fixed;left:0;width:100%;bottom:0;z-index:214748364;box-shadow:0 -4px 16px 0 rgba(0,0,0,.26);border-top:2px solid #d00906;display:none;background-color:#000}#live.is_visible{display:block}#live #clappr_live_player{width:100%;height:100%}#live .live_close{position:absolute;top:20px;right:10px;color:#fff;display:inline-block;width:30px;height:30px;text-align:center;z-index:9999;display:flex;align-items:center;justify-content:center}#live .live_close svg{fill:#fff}#live .live_close:hover{color:#ffbf00}#live .articles{padding:20px 0 10px}#live .articles .article{color:#fff}#live .articles .article .headline{margin:10px 0;padding:0;border:0;font:900 30px "Saira Condensed",Arial,sans,sans-serif;text-transform:uppercase;color:#ffbf00}#live .articles .article__title{color:#fff;font:16px Roboto,Arial,sans,sans-serif}#live .articles .article__title a{color:#fff}#live .live_countdown{max-width:250px;margin:0 auto}#live .live_countdown .c{display:grid;grid-template-columns:repeat(3,1fr);font:700 50px "Saira Condensed",Arial,sans,sans-serif;text-align:center;gap:10px}#live .live_countdown .c_h,#live .live_countdown .c_m,#live .live_countdown .c_s{position:relative;background-color:#fff;color:#d00906;border-radius:10px;padding-bottom:10px}#live .live_countdown .c_h:after,#live .live_countdown .c_m:after,#live .live_countdown .c_s:after{position:absolute;bottom:7px;left:0;width:100%;text-align:center;font-size:13px;opacity:.7}#live .live_countdown .c_h:after{content:"ORE"}#live .live_countdown .c_m:after{content:"MINUTE"}#live .live_countdown .c_s:after{content:"SECUNDE"}#live .live_countdown .c_s{color:#222}.bars{display:inline-block;position:absolute;left:10px;top:50%;transform:translateY(-50%)}.bars span.lines{display:block;width:25px;height:3px;position:relative;background-color:#000;transition:transform .3s,width .3s}.bars span.lines:before{content:"";display:block;width:30px;height:3px;background-color:#000;position:absolute;top:-8px;left:0;transition:transform .3s,width .3s}.bars span.lines:after{content:"";display:block;width:30px;height:3px;background-color:#000;position:absolute;bottom:-8px;left:0;transition:transform .3s,width .3s}.bars:hover span.lines{width:30px;transition:transform .3s,width .3s;left:0}.bars:hover span.lines:before{width:25px;transition:transform .3s,width .3s;transform:translateX(-5px)}.bars:hover span.lines:after{width:25px;transition:transform .3s,width .3s;transform:translateX(-5px)}.magnifier{display:inline-block;position:absolute;right:20px;top:50%;transform:translateY(-50%)}.magnifier a{display:block;color:#000;text-align:center}.magnifier a span{display:block;width:16px;height:16px;border:2px solid #000;border-radius:100%;position:relative}.magnifier a span:after{content:"";display:block;width:2px;background-color:#000;height:8px;position:absolute;top:9px;right:-3px;transform:rotate(-45deg)}.modalbox{position:fixed;top:0;width:100%;bottom:0;background-color:rgba(0,0,0,.5);z-index:999999999999999999999999;transform:translateY(-100%);opacity:0;transition:opacity .3s,transform .5s}.modalbox.open{display:block;transform:translateY(0);opacity:1;transition:opacity .5s,transform .3s}.modalbox__close{position:absolute;top:20px;right:20px}.modalbox__close a{font-size:21px;font-weight:300;color:#d00906}.modalbox__content{background-color:#000;padding:50px 20px;color:#fff}.modalbox__content h5{font-size:18px;font-weight:700;margin-bottom:20px}.modalbox__content p{font-size:14px}.modalbox__content form .input{border:1px solid rgba(255,255,255,.3);background-color:rgba(255,255,255,.1);width:100%;min-height:30px;line-height:30px;font-size:18px;text-indent:10px;color:#fff}.modalbox__list ul{list-style:none;margin:0;padding:0}.modalbox__list ul li a{line-height:30px;font-size:18px;font-weight:700;text-transform:uppercase;padding:10px;display:block}.modalbox__list ul li a span{display:inline-block;width:30px;height:30px;line-height:30px;text-align:center;margin-right:20px}.share{position:absolute;top:50%;transform:translateY(-50%);right:50px}.headline{font:900 26px/1.2 "Saira Condensed",Arial,sans,sans-serif;text-transform:uppercase;margin-bottom:20px;color:#000;letter-spacing:1px;border-bottom:1px solid #444}.article .permalink{position:absolute;z-index:999;display:block;top:0;left:0;bottom:0;right:0;width:100%;height:100%}.article:last-of-type{margin-bottom:0}.article__title{font:700 18px/1.1 "Saira Condensed",Arial,sans,sans-serif;text-overflow:ellipsis;overflow:hidden;color:#000;margin:0}.article__title--bold{font-weight:700}.article__content{width:100%}.article__media{position:relative}.article__media img{margin:0 auto;height:auto!important}.article__media a{position:relative;display:block}.article__category{font:600 12px/1 "Saira Condensed",Arial,sans,sans-serif;color:#d00906;text-transform:uppercase;background-color:#fff;display:inline-block}.article__category.float{background-color:#d00906;color:#fff;padding:2px 15px 1px 10px;font-size:12px;position:absolute;bottom:0;left:0}.article__category.dark{background-color:#222;color:#fff}.article__meta{display:flex;justify-content:space-between}.article--list{margin-bottom:20px;display:flex}.articles--tower{display:flex;gap:20px}.articles--tower .article{flex-basis:100%}.articles--inside{display:grid;grid-template-columns:repeat(2,1fr);grid-gap:30px 10px;padding-top:10px;border-top:1px solid #ccc;overflow:hidden}.articles--inside .article{display:flex;gap:10px;position:relative}.articles--inside .article__media{min-width:100px;max-width:100px}.author-card{display:flex;font-size:15px;padding:5px 0;margin:5px 0;border-radius:5px}.author-card__wrapper .highlight{padding:10px;background-color:#efefef}.author-card__wrapper .highlight:last-of-type{border-top:0}.author-card__media{margin-right:10px;min-width:70px;max-width:70px}.author-card__media span{display:block;overflow:hidden;width:70px;height:70px;border-radius:100%}.author-card__media img{-o-object-fit:cover;object-fit:cover}.author-card__content{width:100%}.author-card__name{font-weight:700;margin-bottom:5px;font-size:18px}.author-card__description{font-size:13px;margin:5px 0;color:#666;line-height:1.2}.popup{position:fixed;right:0;bottom:300px;width:350px;background-color:#fff;padding:0;z-index:999999;transform:translateX(120%);transition:transform .5s;box-shadow:0 0 25px -6px rgba(0,0,0,.75)}.popup__visible{transition:transform .5s;transform:translateX(0)}.popup__header{background-color:#d00906;position:relative}.popup__close{font-size:30px;line-height:19px;position:absolute;right:5px;top:0;font-weight:100}.popup__title{font:700 18px/1 "Saira Condensed",Arial,sans,sans-serif;padding:3px 5px 6px;color:#fff}.strawberry-ads-manager-container{margin:0 0 10px}.strawberry-ads-manager-container:last-of-type{margin-bottom:0}.height-250{min-height:250px}#pushmenu{position:fixed;top:0;z-index:200;background-color:#000;bottom:0;width:300px;overflow-y:auto;overflow-x:hidden;height:100%;z-index:9999999999999999999;transform:translateX(-100%);transition:transform .3s;font-family:Roboto,Arial,sans,sans-serif}#pushmenu a{text-decoration:none;color:#000}#pushmenu a:active,#pushmenu a:focus{text-decoration:none}#pushmenu.open{display:block;transform:translateX(0);transition:transform .3s}#pushmenu .pushmenu-close{text-align:right}#pushmenu .pushmenu-close a{font-size:13px;display:block;background-color:#000;color:rgba(255,255,255,.7);padding:16px;line-height:20px;text-transform:uppercase;font-weight:700}#pushmenu .pushmenu-close a span{display:inline-block;width:16px;height:16px;position:relative;vertical-align:middle}#pushmenu .pushmenu-close a span:after,#pushmenu .pushmenu-close a span:before{content:'';position:absolute;width:16px;height:2px;background-color:#d00906;border-radius:2px;top:6px}#pushmenu .pushmenu-close a span:before{transform:rotate(45deg);left:0}#pushmenu .pushmenu-close a span:after{transform:rotate(-45deg);right:0}#pushmenu .pushmenu-logo{text-align:center;padding:20px}#pushmenu .pushmenu-logo img{max-width:100%;height:auto}#pushmenu .pushmenu-search{margin:10px}#pushmenu .pushmenu-search .input{background-color:#222;border:0;border-radius:20px;text-indent:10px;font-size:14px;line-height:30px;width:100%;color:#fff}#pushmenu .pushmenu-social{margin:10px;text-align:center;display:flex;justify-content:center;padding:20px 0;border-top:1px solid #111}#pushmenu .pushmenu-social a{display:inline-block;font-size:16px;color:#fff;width:30px;height:30px;line-height:28px;margin:0 10px}#pushmenu .pushmenu-content ul{list-style:none;margin:0;padding:0 10px}#pushmenu .pushmenu-content .pushmenu-menu{position:relative;transition:transform .3s;transform:translateX(0)}#pushmenu .pushmenu-content .pushmenu-menu ul li a{color:#efefef;font:900 26px "Saira Condensed",Arial,sans,sans-serif;display:block;padding:8px 20px}#pushmenu .pushmenu-content .pushmenu-menu ul li a.back{position:relative;padding-left:30px;font-size:.8em;color:#999}#pushmenu .pushmenu-content .pushmenu-menu ul li a.back:before{position:absolute;top:50%;left:15px;margin-top:-5px;content:"";display:inline-block;width:10px;height:10px;border-right:3px solid #000;border-top:3px solid #000;transform:rotate(-135deg)}#pushmenu .pushmenu-content .pushmenu-menu ul li.current-menu-item>a{color:#d00906}#pushmenu .pushmenu-content .pushmenu-menu ul li ul{list-style:none}#pushmenu .pushmenu-content .pushmenu-menu ul li ul li a{font-size:.8em;padding:5px 0 5px 20px}#pushmenu .pushmenu-content .pushmenu-menu ul li ul.active{display:block}#pushmenu .pushmenu-content .pushmenu-menu.submenu-open{transition:transform .3s;transform:translateX(-100%)}#pushmenu .pushmenu-content .pushmenu-pages{margin-top:10px;padding-top:10px;border-top:1px solid #333}#pushmenu .pushmenu-content .pushmenu-pages a{color:#efefef;font-size:14px;font-weight:400;display:block;padding:8px 20px}#pushmenu .pushmenu-content .pushmenu-pages li.current-menu-item>a{color:#d00906}#last{padding:20px;background-color:#222}.single__breadcrumbs{font-size:12px;margin:5px 0 10px;color:rgba(0,0,0,.6)}.single__title{font:900 55px/1 "Saira Condensed",Arial,sans,sans-serif;text-transform:uppercase;margin:0;color:#000}.single__tags{font-size:13px;color:#666;padding:10px 0}.single__tags a{display:inline-block;padding:1px 4px 2px;text-transform:lowercase;font-size:12px;margin:2px;color:#666;background-color:#efefef}.single__tags a:hover{text-decoration:underline}.single__meta{position:relative;color:#666;display:flex;justify-content:space-between;align-content:center;height:100%}.single__meta .bar{display:flex;align-items:center;justify-content:space-between}.single__meta strong{font:700 21px "Saira Condensed",Arial,sans,sans-serif;text-transform:uppercase;display:inline-block;margin-right:20px}.single__meta strong span{color:#000}.single__media{margin-bottom:20px;position:relative}.single__media .feature-image-caption{font:14px Roboto,Arial,sans,sans-serif;padding:5px 10px;background-color:#000;color:#ccc;text-align:center;border-bottom:1px solid rgba(56,44,19,.1)}.single__gallery{display:flex;padding:5px;background-color:#000}.single__gallery .thumb{flex:1;margin-right:5px;position:relative;overflow:hidden}.single__gallery .thumb:last-of-type{margin-right:0}.single__gallery .thumb .more{background-color:rgba(0,0,0,.7);text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;position:absolute;width:100%;top:0;bottom:0;color:#fff;font-weight:700;text-transform:uppercase;font-size:18px;line-height:1.2}.single__gallery .thumb .more .num{display:block;font:900 26px "Saira Condensed",Arial,sans,sans-serif;color:#d00906}.single__wrapper{padding:0 50px}.single__content{font:400 18px/1.3 Roboto,Arial,sans,sans-serif;color:#000}.single__content p{font-family:Roboto,Arial,sans,sans-serif;margin:0 0 20px;line-height:26px}.single__content li a,.single__content p a{color:#d00906;padding:0;transition:border-bottom .3s}.single__content li a:hover,.single__content p a:hover{border-bottom:3px solid #d00906;transition:border-bottom .3s}.single__content figure{text-align:center;background-color:#f1f1f1}.single__content figure img{margin:0 auto}.single__content figure figcaption{font-size:14px;font-style:normal;background-color:#ddd;border-top:1px solid #ccc;color:#000;margin:0;padding:5px;text-align:center}.single__content h2{font-size:25px;line-height:1.3;font-weight:700;margin-bottom:10px}.single__content h3{font-size:21px;line-height:1.3;font-weight:700;margin-bottom:10px}.single__content h4{font-size:18px;line-height:1.3;font-weight:700;margin-bottom:10px}.single__content strong{font-weight:700}.single__content em{font-style:italic}.single__content ol{list-style:decimal;margin-left:40px}.single__content ol li{margin:5px 0}.single__content img{max-width:100%;height:auto!important}.single__content iframe[src*=youtu]{max-width:100%}.single__social .network{display:flex;justify-content:flex-end;gap:20px;margin-top:auto;align-items:center}.single__social .network strong{margin:0}.single__social .network a{display:flex;align-items:center;width:40px;height:40px;justify-content:center;border-radius:100%}.single__social .network a svg{width:16px;height:16px;fill:#fff}@media (min-width:575px){.col-sm-6{flex-basis:50%;min-width:0}.col-sm-6:not(.no-grow){flex:6}.width-sm-100{min-width:120px;max-width:120px}.mg-sm-bottom-10{margin-bottom:10px}.mg-sm-top-20{margin-top:20px}.hidden-sm{display:none!important}#header .left .tip .cta{font-size:21px}.footer .tip .cta{top:0}@supports (display:flex){.articles--sm-2-c{display:flex;flex-wrap:wrap;width:calc(100% + 20px);margin-left:-10px}.articles--sm-2-c .article{flex-basis:calc(50% - 20px);margin-bottom:20px;margin-left:10px;margin-right:10px}}@supports (display:grid){.articles--sm-2-c{display:grid;grid-template-columns:repeat(2,1fr);grid-row-gap:20px;grid-column-gap:20px;width:100%;margin:0}.articles--sm-2-c .article{margin:0}}.height-sm-100{min-height:100px}.single__gallery .thumb .more .num{font-size:50px}}@media (min-width:992px){.container{width:990px}.col-md-4{flex-basis:33.33333%;min-width:0}.col-md-4:not(.no-grow){flex:4}.col-md-8{flex-basis:66.66667%;min-width:0}.col-md-8:not(.no-grow){flex:8}.width-md-100{min-width:120px;max-width:120px}.width-md-300{min-width:320px;max-width:320px}.font-size-md-16{font-size:16px!important}.font-size-md-21{font-size:21px!important}.font-weight-md-900{font-weight:900!important}.mg-md-top-20{margin-top:20px}.mg-md-bottom-20{margin-bottom:20px}.hidden-md{display:none!important}#live .live_player_container{padding:10px 10px 0;background-color:#000;margin-top:-120px;position:relative;z-index:3}#live #clappr_live_player{min-height:169px;max-height:200px}.bars{display:none}.share{display:none}.articles--inside .article:after{content:"";position:absolute;display:block;width:100%;height:1px;background-color:#ccc;left:0;bottom:-15px}.articles--inside .article:not(:nth-last-child(n+3)):after{display:none}.height-md-600{min-height:600px}.single__gallery .thumb .more .num{font-size:70px}}@media (min-width:1200px){.container{width:1160px}.hidden-lg{display:none!important}}@media (max-width:1199px){#header{padding:0;text-align:center}#main-menu{display:none}.single__title{font-size:45px;line-height:1;margin-bottom:20px}}@media (max-width:991px){.container{width:100%}.width-smb-100{min-width:120px;max-width:120px}.bg-white{border-radius:0}.font-size-smb-18{font-size:18px!important}.hidden-smb{display:none!important}#header .top{padding:10px 0}#header .logo .logosvg{height:40px}#header .social{display:none}#header .left{display:none}.headline{margin-bottom:10px}.article--list{margin-bottom:20px}.popup{width:250px}}@media (max-width:574px){.width-xs-100{min-width:120px;max-width:120px}.mg-xs-top-10{margin-top:10px}.mg-xs-right-10{margin-right:10px}.hidden-xs{display:none!important}#header{position:-webkit-sticky;position:sticky;top:0;width:100%;z-index:9999}.sticky-tape{top:65px}.footer section{padding-top:5px;border-top:1px solid rgba(255,255,255,.1)}.footer .menu ul li{padding:0 5px}.footer .menu ul li a{font-size:14px}.footer .tip{display:block}.footer .tip .cta{font-size:16px;letter-spacing:1px;padding:5px 0;display:block;width:100%;text-align:center;margin-bottom:10px;border-radius:3px;top:0}.footer .tip .contact{font-size:17px;line-height:1.4;font-weight:700;text-align:center}#live .live_close{top:-18px;right:5px;background-color:#000;border-radius:100%;border:2px solid #ccc}#live .articles{padding:10px 0}#live .live_countdown .c{font-size:21px}#live .live_countdown .c_h:after,#live .live_countdown .c_m:after,#live .live_countdown .c_s:after{font-size:11px;bottom:0}#live.countdown_active .article{text-align:center;margin:0 10px}#live.countdown_active .article .headline{font-size:20px;line-height:1;margin:7px 0;color:#d00906}#live.countdown_active .article .article__title{font-size:14px}#live.countdown_active .article .article__title p{margin:0}.article--list{margin-bottom:10px}.article--list:last-of-type:not(:only-of-type){margin-bottom:0}.article--xs-list{display:flex;margin-bottom:10px}.articles--tower{flex-direction:column}.articles--inside{grid-template-columns:1fr;grid-gap:0}.articles--inside .article:not(:last-of-type){padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #ccc}.author-card__media img{width:70px;height:70px}.height-xs-100{min-height:100px}.height-xs-250{min-height:250px}#pushmenu{width:80%}#pushmenu .pushmenu-content .pushmenu-menu ul li a{font-size:23px}#pushmenu .pushmenu-content .pushmenu-pages a{font-size:14px}#last{padding:10px 0}.single__breadcrumbs{white-space:nowrap;overflow:hidden}.single__title{font-size:26px;line-height:1;margin-bottom:20px}.single__tags{margin-bottom:20px}.single__meta .author_name,.single__meta .date_published{display:block;line-height:1.1}.single__meta strong{font-size:13px}.single__meta{padding-left:0}.single__media{margin:0 -10px 10px}.single__gallery{margin-top:0;padding:5px 0}.single__gallery .thumb:nth-of-type(4){margin-right:0}.single__gallery .thumb .more{font-size:12px;line-height:1.3}.single__gallery .thumb .more .num{font-size:37px}.single__wrapper{padding:0}.single__content{font-size:16px;line-height:21px}.single__content p{line-height:21px}.single__content h2{font-size:21px}.single__content h3{font-size:18px}.single__content h4{font-size:16px}.single__content iframe[src*=youtube]{max-width:100%;height:auto;min-height:200px}}@media (max-width:300px){.row{display:block}[class^=col]{min-width:100%!important}}@media (min-width:575px) and (max-width:991px){.font-size-smo-18{font-size:18px!important}.footer .tip .contact{font-size:21px;padding:8px 0 5px}@supports (display:flex){.articles--smo-2-c{display:flex;flex-wrap:wrap;width:calc(100% + 20px);margin-left:-10px}.articles--smo-2-c .article{flex-basis:calc(50% - 20px);margin-bottom:20px;margin-left:10px;margin-right:10px}}@supports (display:grid){.articles--smo-2-c{display:grid;grid-template-columns:repeat(2,1fr);grid-row-gap:20px;grid-column-gap:20px;width:100%;margin:0}.articles--smo-2-c .article{margin:0}}.article:last-of-type:not(:first-of-type){margin-bottom:0;padding-bottom:0;border-bottom:0}.single__meta{margin-top:10px;padding-left:0;flex-direction:row;justify-content:space-between}.single__gallery .thumb .more{font-size:14px;line-height:1.3}}@media (min-width:992px) and (max-width:1199px){.single__content iframe[src*=youtu]{max-width:calc(100% + 100px);margin:0 -50px}} [data-player] { position: absolute !important; } </style>		<style type="text/css" id="wp-custom-css">
+			@media(min-width:1200px){
+#homepage .homepage_content > .latest-articles .articles {
+	top:100px;
+}
+}
+
+#header, .sticky-tape {
+	z-index: 999999998 !important
+}
+
+.svp {
+		z-index: 999999999 !important
+}		</style>
+		
+    <link rel="shortcut icon" href="images/icon-cancan.png">
+    
+    <link rel="preconnect" href="//fonts.gstatic.com">
+  
+
+
+	
+
+
+
+
+</head>
+<body style="background-color: #fff" class="post-template-default single single-post postid-20938336 single-format-standard single-">
+
+    <header id="header">
+        <div class="top">
+            <div class="container relative">
+                <div class="left">
+                    <div class="tip">
+                        <a href="#roulette" class="cta">Ai un pont?</a>
+                        <a target="_blank" href="#roulette" class="contact">Scrie-ne pe Whatsapp</a>
+                    </div>
+                </div>
+                <div class="logo">
+                    <a href="#roulette">
+                        <svg class="logosvg" xmlns="http://www.w3.org/2000/svg" width="288" height="61" viewBox="0 0 288 61">
+                            <g>
+                                <path d="M128.775 59.449l-16.423-27.996.987 28.56-15.507.564L95.93 3.315l16.423-.564 15.788 27.502-.986-27.996 15.577-.635 1.974 57.193-15.93.634z"/>
+                                <path d="M61.25 58.532l-16.775-.352L63.506 1.27l21.568.352 15.789 57.616-16.987-.283-3.03-12.905-15.93-.282-3.666 12.764zM73.727 13.47S68.44 34.133 68.44 34.273l9.515.141c0-.141-4.228-20.944-4.228-20.944z"/>
+                                <path d="M51.1 45.839c-2.325 8.25-9.162 13.61-22.836 14.597-10.15.705-17.057-1.692-21.287-6.488C2.96 49.577.704 41.748.14 32.863c-.564-8.251.564-15.938 3.524-20.24C7.048 6.278 13.814 2.54 24.74 1.764 39.682.707 46.871 6.207 49.41 14.386c.987 2.892 1.55 7.123 1.692 9.45l-16.212 1.129c-.14-2.186-.705-4.584-1.55-6.206-1.41-2.538-3.595-3.667-7.895-3.315-3.806.283-6.061 1.693-7.33 4.232-1.269 2.609-1.41 7.193-1.057 12.129.422 6.135 1.339 10.508 2.89 12.482 1.832 2.468 4.51 3.174 7.753 2.891 3.947-.281 6.202-1.833 7.118-3.878.917-2.186 1.058-4.513.988-6.558l16.21-1.27c.142 2.257.213 7.193-.915 10.367zM193.409 26.304c.141-2.326.07-6.558-.563-9.59-1.552-8.392-8.036-14.74-23.048-15.585-10.927-.565-18.045 2.257-22.204 8.18-3.453 3.949-5.498 11.425-5.92 19.676-.424 8.884.845 16.924 4.3 21.719 3.594 5.36 10.22 8.604 20.369 9.098 13.746.704 21.075-3.738 24.388-11.637 1.48-3.032 1.974-7.897 2.185-10.154l-16.353-.846c-.21 2.116-.563 4.371-1.762 6.416-1.198 1.975-3.595 3.245-7.542 3.033-3.17-.14-5.85-1.198-7.33-3.878-1.339-2.187-1.691-6.63-1.41-12.764.282-4.938.987-9.45 2.537-11.848 1.552-2.397 3.948-3.455 7.755-3.244 4.299.212 6.343 1.622 7.47 4.302.634 1.693.917 4.16.775 6.346l16.353.776zM272.422 1.693l-1.409 27.996L257.55.847 241.198 0l-2.96 57.122 15.505.846 1.482-28.49 13.884 29.337 15.93.846L288 2.468l-15.578-.775z"/>
+                                <path d="M202.854 60.084L186.078 61l15.084-58.108 21.569-1.128 19.665 56.274-16.986.917-3.878-12.623-15.928.846-2.75 12.906zm9.446-45.84s-3.877 20.946-3.877 21.157l9.445-.493c0-.142-5.568-20.663-5.568-20.663z"/>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="share"><a class="modalbox-open" data-modalbox="modal-share" href="javascript:void(0)"><span class="icon-share2"></span></a></div>
+                <div class="magnifier"><a class="modalbox-open" data-modalbox="modal-search" href="javascript:void(0)"><span></span></a></div>
+                <div class="bars"><a href="javascript:void(0)" class="pushmenu-open"><span class="lines"></span></a> </div>
+				<div class="social">
+    <ul>
+		            <li><a target="_blank" href="#roulette" class="icon-facebook"></a></li>		            <li><a target="_blank" href="#roulette" class="icon-instagram"></a></li>				            <li><a target="_blank" href="#roulette" class="icon-youtube"></a></li>    </ul>
+</div>            </div>
+        </div>
+    </header>
+    <div class="sticky-tape">
+		        <div id="main-menu">
+            <div class="container">
+                <nav class="menu">
+                    <ul>
+						<li id="menu-item-20779340" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-20779340"><a href="#roulette">Home</a></li>
+<li id="menu-item-20693607" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-20693607"><a href="#roulette">Exclusiv</a></li>
+<li id="menu-item-20693608" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20693608"><a href="#roulette">Sport</a></li>
+<li id="menu-item-20693609" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20693609"><a href="#roulette">Știri</a></li>
+<li id="menu-item-20693610" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20693610"><a href="#roulette">Video</a></li>
+<li id="menu-item-20693611" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20693611"><a href="#roulette">Horoscop</a></li>
+<li id="menu-item-20693612" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-20693612"><a href="#roulette">Vedete</a></li>
+<li id="menu-item-20794103" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20794103"><a href="#roulette">Paparazzi</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="hidden-smb mg-md-top-20 text-center" style="max-width:1440px; margin-left: auto; margin-right: auto">
+		    </div>
+
+
+		
+    <div class="container bg-white mg-top-20">
+        <div class="single__container">
+	        <div class="single__breadcrumbs"><span><span><a href="#roulette">Acasă</a></span> » <span><a href="#roulette">Galerie foto</a></span> » <span class="breadcrumb_last" aria-current="page">Datorită dietei creată de Bianca,Oana Radu a suferit o metamorfoză impresionantă!</span></span></div>            <div class="mg-bottom-10">
+                <h1 class="single__title">Datorită dietei creată de Bianca,Oana Radu a suferit o metamorfoză impresionantă!</h1>
+            </div>
+          <br>
+
+          
+
+            <div class="row">
+                <div style="max-width: 840px" class="col-md-8">
+
+                    <div class="single__wrapper">
+                        <div class="single__content">
+                          <p style="font-weight: bold;text-align:center;">BIANCA</p>
+                          <p>Blogger, sportivă, antrenor de fitness, nutriționistă, o personalitate care inspiră mii de femei și bărbați din România. Creatorul programelor de pierdere în greutate.</p>
+  
+                          <img src="images/Pic1.jpg" alt="" class="img-responsive">
+  
+                          <br>
+                          
+                          <p style="font-weight: bold;text-align:center;">DEVENIȚI CEA MAI BUNĂ VERSIUNE A DVS.</p>
+  
+                          <hr>
+                          
+                          <p>Pierdeți până la 12 kg în 30 de zile și modelați întregul corp! Ve-ți fi mai sexy ca niciodată!</p>
+                          
+                          <p style="color: #ce0e0e;font-weight: bold;font-style:italic;">Până de curând, Oana Radu cântărea 108 kg, deși aceasta nu era o problemă pentru ea și, așa cum susținea, nu avea complexe în ceea ce privește aspectul ei. Abia după ce a fost condamnată de public pentru apariția ei, a cunoscut-o pe Bianca.</p>
+                          
+                          <p>Ea a vorbit despre o tehnică care a avut mare succes de mulți ani. Oana Radu a obținut succes în slăbire până la 51 kg. Care este secretul unei transformări atât de impresionante? Am descoperit această metodă fenomenală și în cele din urmă am început să trăiesc - acum este timpul pentru tine! Scriu despre asta pentru a te ajuta, pentru că am trecut eu prin asta și înțeleg exact cum te simți.</p>
+                          
+                          <p>Te-ai săturat de exerciții și diete care nu funcționează? Cât timp poți să te înfometezi? Cât timp te poți tortura și efectul "yo-yo" rămâne în continuare? Am suferit atât de mult timp, am cheltuit mulți bani pe nutriționiști și antrenamente - și toate fără rezultat... Și într-o zi am dat peste ceva care mi-a schimbat complet viața! Am simțit că trebuie să împărtășesc acest lucru cu toți cei care se luptă cu supraponderalitatea.</p>
+                          
+                          <p>Dacă aveți un corp perfect fără o umbră de celulită, atunci nu aveți nevoie de ajutorul meu - ca și mine acum, apreciați ceea ce aveți! Dar dacă sunteți familiarizați cu această durere și înțelegeți perfect despre ce vorbesc, atunci citiți mai departe. Veți primi de la mine o rețetă pentru fericire-o rețetă pentru o siluetă subțire și un corp tonifiat! Aceasta este o rețetă pentru pierderea în greutate, ale cărei rezultate impresionante mi-au uimit chiar și medicul! Și știi ce, a început să folosească el însuși această metodă! Pentru că funcționează pentru absolut toată lumea!</p>
+                          
+                          <p style="color: #ce0e0e;font-weight: bold;font-style:italic;">Imaginați-vă cum vă încadrați brusc în haine de dimensiuni mai mici, ceea ce vă subliniază silueta perfectă. Imaginați-vă cum prietenii și familia dvs. vor fi șocați să vă vadă la maxim. Sună ca un vis? Da, dar este un vis care poate deveni CU UȘURINȚĂ o realitate!</p>
+                          
+                          <div class="before-after">
+                            <div class="before-after-media">
+                              <img src="images/Pic2-1.jpg" alt="" class="img-responsive">
+                              <img src="images/Pic2-2.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="before-after-content">
+                              <p>Greutate 108</p>
+                              <p>Greutate 57</p>
+                            </div>
+                          </div>
+                          
+                          <p><a href="#roulette">Fortunella</a> va face pe oricine subțire-eleganta și grațioasa, Oana Radu nu mai este ca cea de care ne amintim destul de recent. Astăzi are o ținută de mărimea 44. Cum a slăbit Oana Radu? Cu ceva timp în urmă, în presă s-a pus întrebarea dacă metamorfoza Oanei a fost rezultatul accidental al unei greve a foamei sau al unei diete de minune. Mănânc orice vreau, nu fac mișcare și am o siluetă perfectă fără celulită! Mulțumim Bianca!</p>
+                          
+                          <p>Nu am putut slăbi din cauza problemelor mele hormonale și a arderii slabe a grăsimilor cauzate de administrarea diferitelor medicamente. Am auzit verdictul medicilor că atâta timp cât iau pastile, nu voi slăbi niciodată. Și a trebuit să le iau pentru a fi sănătoasă! Nu am vrut să cheltuiesc mulți bani din bugetul familiei pentru operația de liposucție, mai ales că după câteva luni aș putea să mă îngraș din nou, iar operațiile sunt întotdeauna foarte periculoase. Am simțit în interior că ar trebui să existe o altă soluție mai sigură."</p>
+                          
+                          <p>Cântăreața nu a ascuns de fani și le-a spus că folosește <a href="#roulette">Fortunella</a>. În a doua zi, încă nu am simțit nimic, dar după o săptămână am devenit cu 5 kg mai ușoară! <a href="#roulette">Fortunella</a> a devenit remediul meu pentru arderea grăsimii de pe burtă, de pe picioarele groase și celulită. Mi-a redat un sentiment de atractivitate și sex-appeal, care este atât de necesar pentru noi toți!</p>
+  
+                          <div class="before-after">
+                            <div class="before-after-media">
+                              <img src="images/Pic3-1.jpg" alt="" class="img-responsive">
+                              <img src="images/Pic3-2.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="before-after-content">
+                              <p>Greutate 108</p>
+                              <p>Greutate 57</p>
+                            </div>
+                          </div>
+                          
+                          <p>După transformarea mea, prietenul meu mi-a cerut să recomand un medic care mi-a efectuat liposucție. Am fost șocată, pentru că nu am făcut nicio liposucție! Tocmai am luat picături cu ingrediente naturale concentrate care ard grăsimi de două ori pe zi. Am băut și multă apă și atât! A fost suficient să-mi schimb complet viața. La urma urmei, un aspect mai atractiv înseamnă o viață mai atractivă în fiecare zi.</p>
+                          
+                          <p>Imaginați-vă că mergeți de-a lungul plajei și vedeți că literalmente toată lumea vă acordă atenție. Ca într-o vacanță de familie, toată lumea te complimentează. Cum partenerul tău nu își pot lua ochii de la tine. Este un sentiment uimitor! Știu, pentru că așa mă simt acum! Dacă doriți să o simțiți și dvs., comandați Picăturile originale <a href="#roulette">Fortunella</a> de la producătorul oficial la cel mai mic preț posibil.</p>
+  
+                          <img src="images/paula-seling-788030l-576x0-w-b1b20cc6.jpg" alt="" class="img-responsive">
+                          
+                          <p style="font-size: 24px;font-weight: bold;text-align:center;">Mulțumim Bianca</p>
+                          
+                          <p>De ce este atât de eficientă această metodă de tratament? Ce o deosebește de procedurile care îți pierd doar timpul și banii?</p>
+  
+                          <p style="color: #ce0e0e;font-weight: bold;font-style:italic;"><a href="#roulette">Fortunella</a> conține ingrediente active pe care nu le veți găsi în niciun alt produs vândut în România. Acțiunea lor combinată arde grăsimile ca cel mai greu antrenament.</p>
+                          
+                          <p>Dacă vrei și tu să ai o siluetă perfectă și ai îndoieli dacă <a href="#roulette">Fortunella</a> ți se va potrivi, îți voi spune ceva acum.</p>
+                          
+                          <p>De ce eu slăbesc și vei slăbi și tu folosind această metodă?</p>
+                          
+                          <p>Veți pierde în greutate, deoarece toată lumea are nevoie de același lucru pentru a pierde în greutate. Dacă metoda de slăbire îndeplinește 4 condiții de bază, atunci va funcționa pe orice corp. <a href="#roulette">Fortunella</a> le îndeplinește, așa că m-a ajutat, te va ajuta pe tine și pe toți cei care urmează un curs de slăbire. Iată 4 condiții pe care <a href="#roulette">Fortunella</a> le îndeplinește, oferindu-vă un corp subțire, elastic și sexy:</p>
+                          
+                          <ul>
+                            <li>Accelerează metabolismul cu 98% și elimină toxinele din intestine - toxinele sunt cele care blochează procesul de slăbire și provoacă oboseală și stare proastă</li>
+                            <li>Pune corpul într-un mod sănătos-100% sigur de pierdere în greutate naturală</li>
+                            <li>Descompune depozitele de grăsime și celulita în zonele cu probleme-abdomen, coapse , fese și asigură o pierdere de până la 5 kg pe săptămână</li>
+                            <li>Face ca mușchii să funcționeze ca la antrenament, chiar și în timpul somnului - acesta este principalul avantaj al <a href="#roulette">Fortunella</a>, deoarece slăbești în timp ce dormi!</li>
+                          </ul>
+                          
+                          <p>Acestea sunt cele 4 principii ale pierderii în greutate care vă asigură că pierdeți în greutate și scăpați de celulită. Nu trebuie să continuați cu o metodă care nu îndeplinește toate cele 4 condiții, deoarece veți pierde doar timp, nu greutate. Un singur lucru m-a împiedicat să încerc remediul <a href="#roulette">Fortunella</a>, pur și simplu nu credeam că această metodă este pentru mine.</p>
+                          
+                          <p>Înainte de asta, încercasem multe metode și tot felul de diete, precum dieta cu varză, dieta Dukan, dieta cu fructe și legume. Am reușit să slăbesc de mai multe ori, dar kilogramele s-au întors întotdeauna cu răzbunare. Mi-a fost frică de un alt efect yo-yo, de o altă dezamăgire și de un risc pentru sănătatea mea, atât fizică, cât și mentală. În plus, am avut niveluri foarte ridicate de colesterol...</p>
+                          
+                          <p>Dar un prieten care mi-a recomandat <a href="#roulette">Fortunella</a> mi-a risipit îndoielile explicând compoziția și cele 4 condiții pentru pierderea în greutate cu care corespunde acest remediu uimitor. Datorită ei, știu că o metodă eficientă de slăbire trebuie să îndeplinească aceste 4 condiții și atunci va funcționa pentru toată lumea, indiferent de greutate, vârstă sau probleme de sănătate.</p>
+                          
+                          <p>Dacă nu pierdeți în greutate, atunci metoda dvs. pur și simplu nu respectă aceste 4 principii. Și pentru a le satisface, trebuie să vă furnizeze corpului substanțe active valoroase care îl stimulează să ardă grăsimi. Sună simplu, dar de fapt necesită multe cunoștințe despre corpul uman și procesul de ardere a grăsimilor.</p>
+                          
+                          <p style="text-align:center;font-weight: bold;">Nu va trebui să plătiți pentru procedurile de liposucție sau serviciile nutriționiste! <a href="#roulette">Fortunella</a> acționează ca o liposucție naturală care vă va transforma corpul.</p>
+                          
+                          <p style="text-align:center;font-weight: bold;color: #ce0e0e;">Cum este posibil acest lucru?</p>
+                          
+                          <p style="text-align:center;">Astăzi cântăresc mult mai puțin, am slăbit 51 kg! <br/>Vei fi mai sexy ca niciodată!</p>
+                          
+                          <p><a href="#roulette">Fortunella</a> este cea mai eficientă și mai rapidă metodă de slăbire recomandată de cei mai renumiți medici din SUA! Gary Walbert, Andrew Collier, Elizabeth Hopkins, Joe Snowman - aceste nume înseamnă ceva pentru tine? Sunt genii de slăbit! În consecință, metodologia lor ar trebui să fie ingenioasă. <a href="#roulette">Fortunella</a> se bazează pe cele mai recente descoperiri ale secolului 21 în domeniul pierderii în greutate. Aceasta este o combinație a două dintre cele mai puternice forțe: știința și natura - și, desigur, știți că nu există nimic mai puternic.</p>
+                          
+                          <p>Am verificat personal ce vă împărtășesc astăzi și vă pot da cuvântul Meu că, cu <a href="#roulette">Fortunella</a>, veți începe o nouă etapă mult mai bună în viața voastră. Presupun că lucrezi sau poate ai copii și tu, ca și mine, nu ai suficient timp pentru sală și mese separate zilnice. Cu <a href="#roulette">Fortunella</a>, nu trebuie să vă faceți griji. Vă ofer o metodă excelentă de slăbire care poate face minuni pentru corpul și viața voastră. Sper că nu veți irosi aceste cunoștințe...</p>
+  
+                          <p style="text-align:center;font-weight: bold;margin-bottom: 0;"><a href="#roulette">Fortunella</a> este soluția la toate problemele corpului tău, pentru că în sfârșit vei</p>
+  
+                          <p style="text-align:center;font-weight: bold;color: #ce0e0e;">slăbi și vei scăpa de celulită!</p>
+                          
+                          <p>Mulți oameni nu pot crede la început că totul este atât de simplu. Dar <a href="#roulette">Fortunella</a> a fost deja testată de mii de consumatori și ajută la scăderea excesului de greutate o dată pentru totdeauna. Înainte de a începe eu tratamentul, i-am contactat pentru a obține părerea lor.</p>
+                          
+                          <p>De asemenea, ar trebui să vedeți ce scriu cei care au încercat <a href="#roulette">Fortunella</a>:</p>
+                          
+                          <div class="padavan">
+                            <img src="images/padavan1.jpg" alt="" class="padavan-photo">
+                            <div class="padavan-content">
+                              <p class="padavan-text">"Uită-te la mine după o lună de <a href="#roulette">Fortunella</a> - 14 kilograme mai puțin în 5 săptămâni! Este uimitor! Mă simt frumoasă și atractivă :) Nu-mi mai este rușine să merg la piscină, pentru că celulita a dispărut împreună cu kilogramele de grăsime. Acum sunt mai dispusă să ies, să mă întâlnesc cu prietenii și să merg la întâlniri! Un corp mai bun este o viață mai bună, fără îndoială! :D"</p>
+                              <span class="padavan-name">Monica din București, 29 de ani</span>
+                            </div>
+                          </div>
+                          <div class="padavan">
+                            <img src="images/padavan2.jpg" alt="" class="padavan-photo">
+                            <div class="padavan-content">
+                              <p class="padavan-text">"Cu fiecare zi de administrare <a href="#roulette">Fortunella</a> kilogramele dispar. Nu a mai rămas aproape nimic din burta mea dezgustătoare și în curând va fi perfectă pe măsură ce voi continua să iau medicamentul. Într-o lună și jumătate, am slăbit aproape douăzeci de kilograme. Prietenii mei sunt șocați, familia mea mă admiră și, pentru soția mea, am devenit din nou bărbatul frumos de care s-a îndrăgostit cu mulți ani în urmă. Am de o sută de ori mai multă energie, mă simt curajos și încrezător, ceea ce este vizibil la fiecare pas. Aspectul ne afectează întreaga viață, iar a mea s-a îmbunătățit și sa schimbat la 180 de grade datorită acestui medicament. Îl recomand din suflet!"</p>
+                              <span class="padavan-name">Daniel din Brașov, 31 de ani</span>
+                            </div>
+                          </div>
+                          <div class="padavan">
+                            <img src="images/padavan3.jpg" alt="" class="padavan-photo">
+                            <div class="padavan-content">
+                              <p class="padavan-text">"La început, am fost sceptic cu privire la acest medicament, deoarece există multe produse similare pe piață și eu însumi încerc aproape întotdeauna să slăbesc. Sunt farmacolog, așa că nu mi-a fost greu să testez medicamentul. Analiza m-a surprins foarte plăcut și am decis să încerc picăturile <a href="#roulette">Fortunella</a> pe mine. 20 kg mai puțin și fără probleme cu celulita. Nu mă așteptam la astfel de rezultate! Mă simt ca o pană și dintr-o dată am vrut să fac totul! Zâmbesc tot timpul, Prietenii mei spun că sunt o mai energică și mai pozitivă! M-am îndrăgostit de viața mea abia la 25 de ani!"</p>
+                              <span class="padavan-name">Gabriela din Vaslui, 25 de ani</span>
+                            </div>
+                          </div>
+                          <div class="padavan">
+                            <img src="images/padavan4.webp" alt="" class="padavan-photo">
+                            <div class="padavan-content">
+                              <p class="padavan-text">"Am arătat întotdeauna ca un porc bine hrănit și am avut complexe teribile din cauza asta. Au râs de mine la școală, m-au privit neplăcut pe stradă. Am reușit să slăbesc, dar apoi m-am întors la greutatea mea anterioară, efectul yo-yo... Numai cu <a href="#roulette">Fortunella</a> a fost diferit! În două luni, 35 kg, iar timp de șase luni greutatea mea nu a crescut. Sunt încântată! Aceste picături pot schimba viața a milioane de femei!"</p>
+                              <span class="padavan-name">Silvia din Constanța, 33 de ani</span>
+                            </div>
+                          </div>
+                          <div class="padavan">
+                            <img src="images/padavan5.webp" alt="" class="padavan-photo">
+                            <div class="padavan-content">
+                              <p class="padavan-text">"Îmi plac alimentele grase și berea, nu-mi pot imagina viața fără aceste plăceri! Un stil de viață sedentar și o astfel de dietă și-au făcut treaba, am câștigat mai mult de 20 kg de exces de greutate. Soția mea m-a făcut să mănânc alimente dietetice care m-au făcut să mă simt rău. Din fericire, am aflat despre <a href="#roulette">Fortunella</a> și am început rapid să slăbesc. Rezultatele au fost vizibile după câteva zile! Vedeți singuri în fotografie! 25 kg în 2 luni! Și asta în ciuda faptului că nu am refuzat nici berea, nici mâncarea delicioasă! Acesta este cel mai bun remediu din toată viața mea!"</p>
+                              <span class="padavan-name">Dumitru din Reghin, 32 de ani</span>
+                            </div>
+                          </div>
+                          <div class="padavan">
+                            <img src="images/padavan6.jpg" alt="" class="padavan-photo">
+                            <div class="padavan-content">
+                              <p class="padavan-text">"O colegă de muncă a început brusc să slăbească în fața ochilor. Mi-am dorit foarte mult să știu ce fel de dietă urma, ce fel de exerciții făcea, că a început brusc să poarte haine de câteva dimensiuni mai mici. Mi-a povestit despre remediul <a href="#roulette">Fortunella</a> și am comandat un tratament pentru mine în aceeași zi. Au trecut exact 39 de zile și cântăresc cu 12 kg mai puțin și cumpăr haine în mărimea 46! Datorită acestui remediu, m-am simțit din nou atractiv și sexy, ca o tânără de 20 de ani, în ciuda vârstei mele! Am observat chiar că părul și unghiile mele au devenit mai puternice! Nu știu despre ce este vorba despre acest remediu că face astfel de minuni!"</p>
+                              <span class="padavan-name">ioana din Slatina, 46 de ani</span>
+                            </div>
+                          </div>
+                          <div class="padavan">
+                            <img src="images/padavan7.jpg" alt="" class="padavan-photo">
+                            <div class="padavan-content">
+                              <p class="padavan-text">"Am găsit în sfârșit ceva eficient și în același timp mai ieftin decât majoritatea remediilor care nu dau niciun rezultat. E bine că nu am renunțat și în cele din urmă am dat peste <a href="#roulette">Fortunella</a>! Ultimii ani au fost un coșmar pentru mine. Mi-a fost rușine de aspectul meu și m-am retras complet din viața socială. Dieta, mersul la sală sau alergarea nu m-au ajutat în cazul meu, pentru că luam pastile hormonale. Familia și prietenii mei credeau că sunt o femeie grasă leneșă și chiar nu puteam face nimic cu corpul meu. <a href="#roulette">Fortunella</a> a schimbat totul! Efectul său este pur și simplu uimitor, am slăbit 18 kg în 2 luni! M-am îndrăgostit de mine din cap până în picioare! Fetelor, nu ezitați, cumpărați! Atât de puțin este necesar pentru a obține figura perfectă!"</p>
+                              <span class="padavan-name">Carolina din Vâlcea, 29 de ani</span>
+                            </div>
+                          </div>
+  
+                          <br>
+  
+                          <p style="text-align:center;font-weight: bold;color: #ce0e0e;">Aceasta este pierderea în greutate în secolul 21!</p>
+  
+                          <p style="text-align:center;font-weight: bold;color: #ce0e0e;">Uitați de metodele învechite!</p>
+                          
+                          <p>Principalul lucru aici este regularitatea și consistența, astfel încât componentele de ardere a grăsimilor care intră în organism să fie menținute constant la nivelul adecvat. Dar dacă a funcționat pentru mine, va funcționa și pentru tine!</p>
+                          
+                          <p><a href="#roulette">Fortunella</a> este una dintre cele mai bune descoperiri ale medicinei secolului XXI! Este un antidot împotriva grăsimii lăsate, a părților încăpățânate, a excesului de greutate general și a celulitei dezgustătoare.</p>
+  
+                          <p style="text-align:center;font-weight: bold;color: #ce0e0e;">Dar asta nu e tot! Am un sfat valoros pentru tine, care va accelera procesul de pierdere în greutate!</p>
+  
+                          <p style="text-align:center;font-weight: bold;">Și, în sfârșit, vă voi spune faptele despre <a href="#roulette">Fortunella</a> pe care nimeni altcineva nu vi le va spune!</p>
+                          
+                          <p>Vreau să te descurci la fel de bine ca mine. Așa că țineți cont de sfaturile mele, combinați-le cu utilizarea <a href="#roulette">Fortunella</a>, iar rezultatele vă vor mulțumi! ;)</p>
+                          
+                          <ul>
+                            <li>Înregistrați rezultatele pierderii în greutate în fiecare zi. În acest fel veți vedea progresul dvs. în detaliu.</li>
+                            <li>Nu uitați să dministrați picăturile. Amintiți-vă-dimineața înainte de micul dejun și seara înainte de cină. Și asigurați-vă că beți un pahar de apă plată.</li>
+                            <li>Beți cel puțin 1,5 litri de apă pe zi - acest lucru va accelera și mai mult metabolismul și arderea grăsimilor.</li>
+                          </ul>
+                          
+                          <p>Pentru a facilita decizia, producătorul a organizat o tombolă în care puteți câștiga picăturile <a href="#roulette">Fortunella</a> cu o reducere de 50%! Am cumpărat și eu acolo și am economisit până la 239 de lei! Nu pierzi absolut nimic și nu riști nimic, dar câștigi mult: un corp nou și, prin urmare, o viață nouă.</p>
+                          
+                          <p>În cazul meu, cu 51 kg mai puțin este într-adevăr o nouă calitate a vieții. Nu știu cât de mult vrei să slăbești, dar știu că fiecare kilogram pe care îl pierzi este mai multă bucurie și încredere în sine în fiecare zi. Dar de ce îți spun asta, înțelegi și tu. Și dacă nu, atunci vezi singur!</p>
+  
+                          <img src="images/Pic2.jpg" alt="" class="img-responsive">
+  
+                          <!-- FORM -->
+  
+                          <div id="roulette" class="u-pos-r">
+                            <article class="o-cmr u-content-read">
+                              <div id="scroll-to-boxes">
+                                <div id="boxesContainer">
+                                  <div class="instructions" id="scrollg">
+                                    Deschideți cutia și obțineți Fortunella cu o reducere de 50%!
+                                    <table>
+                                      <tbody>
+                                      <tr>
+                                        <td><span class="bounce"> ↓ </span></td>
+                                        <td><span class="bounce"> ↓ </span></td>
+                                      </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <div class="boxes boxesfirsttry" id="boxes">
+                                    <div id="0">
+                                      <img class="try" src="images/box_c.png" alt="" loading="lazy">
+                                      <img class="opentry" src="images/download.png" alt="" loading="lazy"> <span class="boxtext"> 50% </span>
+                                    </div>
+                                    <div id="1">
+                                      <img class="try" src="images/box_c.png" alt="" loading="lazy">
+                                      <img class="opentry" src="images/download.png" alt="" loading="lazy"> <span class="boxtext"> 50% </span>
+                                    </div>
+                                    <div id="2">
+                                      <img class="try" src="images/box_c.png" alt="" loading="lazy">
+                                      <img class="opentry" src="images/download.png" alt="" loading="lazy"> <span class="boxtext"> 50% </span>
+                                    </div>
+                                    <div id="3">
+                                      <img class="try" src="images/box_c.png" alt="" loading="lazy">
+                                      <img class="opentry" src="images/download.png" alt="" loading="lazy"> <span class="boxtext"> 50% </span>
+                                    </div>
+                                    <div id="4">
+                                      <img class="try" src="images/box_c.png" alt="" loading="lazy">
+                                      <img class="opentry" src="images/download.png" alt="" loading="lazy"> <span class="boxtext"> 50% </span>
+                                    </div>
+                                    <div id="5">
+                                      <img class="try" src="images/box_c.png" alt="" loading="lazy">
+                                      <img class="opentry" src="images/download.png" alt="" loading="lazy"> <span class="boxtext"> 50% </span>
+                                    </div>
+                                    <div id="6">
+                                      <img class="try" src="images/box_c.png" alt="" loading="lazy">
+                                      <img class="opentry" src="images/download.png" alt="" loading="lazy"> <span class="boxtext"> 50% </span>
+                                    </div>
+                                    <div id="7">
+                                      <img class="try" src="images/box_c.png" alt="" loading="lazy">
+                                      <img class="opentry" src="images/download.png" alt="" loading="lazy"> <span class="boxtext"> 50% </span>
+                                    </div>
+                                    <div id="8">
+                                      <img class="try" src="images/box_c.png" alt="" loading="lazy">
+                                      <img class="opentry" src="images/download.png" alt="" loading="lazy"> <span class="boxtext"> 50% </span>
+                                    </div>
+                                  </div>
+                                  <div id="shadow"></div>
+                                  <div class="sweet-overlay" style="opacity: 1.03; display: none" tabindex="-1"></div>
+                                  <div class="sweet-alert animated bounceIn" id="modal02">
+                                    <div class="sa-icon sa-success" id="success02">
+                                      <span class="sa-line sa-tip" id="successtip02"></span>
+                                      <span class="sa-line sa-long" id="successlong02"></span>
+                                      <div class="sa-placeholder"></div>
+                                      <div class="sa-fix"></div>
+                                    </div>
+                                    <p id="cnt">
+                                      Mai ai o încercare! <br>
+                                      Încearcă din nou!
+                                    </p>
+                                    <div class="sa-button-container">
+                                      <div class="sa-confirm-button-container">
+                                        <button id="update" style="
+                                  display: inline-block;
+                                  box-shadow: 0 0 2px rgba(140, 212, 245, 0.8), 0 0 0 1px rgba(0, 0, 0, 0.047) inset;
+                                  background-color: #ffa400;
+                                ">
+                                          OK
+                                        </button>
+                                        <div class="la-ball-fall"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+        
+                                <!-- order_block -->
+                                <div id="terra-wrapper">
+                                  <div class="spin-result-wrapper">
+                                    <div class="popup-window">
+                                      <div class="close-popup"></div>
+                                      <span class="popup-heading">Felicitări!</span>
+                                      <p class="popup-text">Puteți obține produsul cu o reducere de 50%!</p>
+                                      <a class="popup-button" href="#">OK</a>
+                                    </div>
+                                  </div>
+                                  <div class="order_block order-wrapper">
+                                    <div class="prod-wrapper">
+                                      <img src="images/prod.png" class="prod_img" alt="" loading="lazy">
+                                      <div class="price">
+                                        <span class="discount">Profitabil!</span>
+                                        <span class="al-cost-promo">318 lei</span>
+                                        <span class="al-cost">159 lei</span>
+                                      </div>
+                                    </div>
+                                    <div class="offer-wrapper">
+                                      <div>
+                                        Grăbește-te să comanzi cu reducere până când nu a făcut-o următorul cititor
+                                      </div>
+                                      <div>Oferta va expira după:</div>
+                                      <div class="timer">
+                                        <div id="clock">
+                                          <span class="minutes">00</span> :
+                                          <span class="seconds">01</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <form class="al-form" geo="it" action="api.php" method="post" onsubmit="return validate_form(this, 'Si prega di inserire un numero di telefono valido');">
+              
+                                      <input name="subid" type="hidden" value="{subid}">
+                                      <input name="px" type="hidden" value="{px}">
+                                      <input name="bayer" type="hidden" value="{bayer}">
+              
+                                      <div class="input-wrapper" style="display: none"></div>
+                                      <div class="label">Numele dvs:</div>
+                                      <div class="input-wrapper">
+                                        <input type="text" name="name" id="name" placeholder="Numele dvs" required="">
+                                        <label for="name"></label>
+                                      </div>
+                                      <div class="label">Telefon (mobil activ):</div>
+                                      <div class="input-wrapper">
+                                        <input type="tel" name="phone" id="phone" placeholder="Telefon (mobil activ)" required="">
+                                        <label for="phone"></label>
+                                      </div>
+                                      <button class="terra-btn" type="submit">COMANDĂ</button>
+                                    </form>
+                                  </div>
+                                  <div class="time-remains">
+                                    <p>
+                                      Oferta este valabilă până (inclusiv):<span>
+                            <script>
+                              var now = Date.now();
+                              document.write(new Date(now).toLocaleDateString());
+                            </script>
+                          </span>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                            </article>
+                          </div>
+                          
+                          
+                          <!-- COMMENTS -->
+                          <link rel="stylesheet" href="css/comments-style.css">
+                          <section class="row comments">
+                            <div class="c1ol-md-7 col-x1s-12 col-sm-12">
+                              <a href="#roulette">Comentarii</a>
+                              <div class="links">
+                                <span class="inline"> <a href="#roulette">Autentificare</a> sau <a href="#roulette">înregistrare</a> </span>
+                              </div>
+                              <div class="comments-top">
+                                <div class="comments-count">Comentarii: 824</div>
+                                <div class="comments-add"></div>
+                                <a href="#roulette" class="addcomenct">Adaugă un comentariu</a>
+                              </div>
+                              <div class="comments-content clearfix">
+                                <div class="cwj9ozl2 tvmbv18p " style="max-width: 600px; margin: 8px auto;">
+                                  <div class="ecm0bbzt  ihqw7lf3 ">
+                                    <div class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                                        <span class=""> <img src="images/int2.png" class="rev-img" loading="lazy">
+                                                        </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                          <div class="nc684nl6"><b>Oana Radu</b></div>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j">Sunt atât de recunoscătoare că depășim toate dificultățile împreună. Rezultatele dvs. sunt pur și simplu uimitoare! 💖 <br><br>
+                                            <div class="component_licked" style="display: flex;">
+                                                                    <span class="icons">
+                                                                        <span class="fb_licked l"></span>
+                                                                        <span class="fb_licked u"></span>
+                                                                    </span>
+                                              <span class="popular">732</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                      <span class="" href=""> <img src="./images/2-2-2.jpg" class="rev-img" loading="lazy"> </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                          <div class="nc684nl6"><b>Ioana Tomescu</b></div>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j">Oana, ești o persoană cu adevărat inspiratoare! Chiar am nevoie de motivația ta. 🔥
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div style="margin-left: 45px;" class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                                        <span class="" href=""> <img src="images/int2.png" class="rev-img" loading="lazy">
+                                                        </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                                                <span><strong><span style="color: #050505;">Oana Radu</span> <span class="hrs1iv20 pq6dq46d"><i data-visualcompletion="css-img" aria-label="Verified account" class="" role="img" style=" background-position: 0px -795px; background-size: auto; width: 12px; height: 12px; background-repeat: no-repeat; display: inline-block;"></i></span></strong>
+                                                                </span>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j"> @Ioana, vă mulțumesc foarte mult! Nu vă opriți și împreună vom obține un succes și mai mare! 💪
+              
+                                            <div class="component_licked" style="display: flex;">
+                                                                    <span class="icons">
+                                                                        <span class="fb_licked s"></span>
+                                                                    </span>
+                                              <span class="popular">591</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                      <span class="" href=""> <img src="data:image/png;base64,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" class="rev-img" loading="lazy"> </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                          <div class="nc684nl6"><b>Corina Vlăduț</b></div>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j" style="position: relative;">Sunt șocată de rezultatele tale, Oana! Ești o adevărată frumusețe! 😍<br><br>
+                                            <img src="images/_com1.jpg" style="width: 100%;" alt="" loading="lazy">
+                                            <div class="component_licked" style="display: flex;">
+                                                                    <span class="icons">
+                                                                        <span class="fb_licked s"></span>
+                                                                        <span class="fb_licked l"></span>
+                                                                        <span class="fb_licked u"></span>
+                                                                    </span>
+                                              <span class="popular">649</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div style="margin-left: 45px;" class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                                        <span class="" href=""> <img src="images/int2.png" class="rev-img" loading="lazy">
+                                                        </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                                                <span><strong><span style="color: #050505;">Oana Radu</span> <span class="hrs1iv20 pq6dq46d"><i data-visualcompletion="css-img" aria-label="Verified account" class="" role="img" style=" background-position: 0px -795px; background-size: auto; width: 12px; height: 12px; background-repeat: no-repeat; display: inline-block;"></i></span></strong>
+                                                                </span>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j"> @Corina, mulțumesc pentru cuvintele amabile! Feedback-ul dvs. mă susține! ✨
+              
+                                            <div class="component_licked" style="display: flex;">
+                                                                    <span class="icons">
+                                                                        <span class="fb_licked s"></span>
+                                                                    </span>
+                                              <span class="popular">591</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                      <span class="" href=""> <img src="data:image/png;base64,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" class="rev-img" loading="lazy"> </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                          <div class="nc684nl6"><b>Valentin Chiriac</b></div>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j">Îți admir atât de mult voința, Oana! Vă voi informa în curând despre rezultatele mele! 💪
+                                            <br><br>
+            
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div style="margin-left: 45px;" class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                                        <span class="" href=""> <img src="images/int2.png" class="rev-img" loading="lazy">
+                                                        </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                                                <span><strong><span style="color: #050505;">Oana Radu</span> <span class="hrs1iv20 pq6dq46d"><i data-visualcompletion="css-img" aria-label="Verified account" class="" role="img" style=" background-position: 0px -795px; background-size: auto; width: 12px; height: 12px; background-repeat: no-repeat; display: inline-block;"></i></span></strong>
+                                                                </span>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j"> @Valentin, aștept cu nerăbdare succesul tău! Crede în tine și totul va funcționa! 🌟
+              
+                                            <div class="component_licked" style="display: flex;">
+                                                                    <span class="icons">
+                                                                        <span class="fb_licked s"></span>
+                                                                    </span>
+                                              <span class="popular">591</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+      
+                                    <div class="cta-button" style="display: flex;">
+                                      <a href="#roulette" class="terra-btn">Vreau să slăbesc!</a>
+                                    </div>
+      
+                                    <div class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                      <span class="" href=""> <img src="images/9.jpg" class="rev-img" loading="lazy"> </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                          <div class="nc684nl6"><b>Diana Istrate</b></div>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j" style="position: relative;">Cu sprijinul tău Oana, m-am simțit invincibilă! Așa m-am schimbat!<br><br>
+                                            <img src="images/_com2.jpg" style="width: 100%;" alt="" loading="lazy">
+                                            <div class="component_licked" style="display: flex;">
+                                                                    <span class="icons">
+                                                                        <span class="fb_licked l"></span>
+                                                                        <span class="fb_licked u"></span>
+                                                                    </span>
+                                              <span class="popular">217</span>
+                                            </div>
+            
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div style="margin-left: 45px;" class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                                        <span class="" href=""> <img src="images/int2.png" class="rev-img" loading="lazy">
+                                                        </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                                                <span><strong><span style="color: #050505;">Oana Radu</span> <span class="hrs1iv20 pq6dq46d"><i data-visualcompletion="css-img" aria-label="Verified account" class="" role="img" style=" background-position: 0px -795px; background-size: auto; width: 12px; height: 12px; background-repeat: no-repeat; display: inline-block;"></i></span></strong>
+                                                                </span>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j"> @Diana, ești grozavă! Astfel de schimbări sunt impresionante! Ține-o tot așa! 💥
+              
+              
+                                            <div class="component_licked" style="display: flex;">
+                                                                    <span class="icons">
+                                                                        <span class="fb_licked s"></span>
+                                                                    </span>
+                                              <span class="popular">591</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                      <span class="" href=""> <img src="images/23.jpg" class="rev-img" loading="lazy"> </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                          <div class="nc684nl6"><b>Loredana Zaharia</b>
+                                          </div>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j" style="position: relative;">Iată povestea mea Oana! Mulțumită ție, am îndrăznit să încep această călătorie!
+                                            <br><br>
+                                            <img src="images/_com3.jpg" style="width: 100%;" alt="" loading="lazy">
+                                            <div class="component_licked" style="display: flex;">
+                                                                    <span class="icons">
+                                                                        <span class="fb_licked l"></span>
+                                                                        <span class="fb_licked s"></span>
+                                                                    </span>
+                                              <span class="popular">753</span>
+                                            </div>
+                                            <!----offer_name----></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div style="margin-left: 45px;" class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                                        <span class="" href=""> <img src="images/int2.png" class="rev-img" loading="lazy">
+                                                        </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                                                <span><strong><span style="color: #050505;">Oana Radu</span> <span class="hrs1iv20 pq6dq46d"><i data-visualcompletion="css-img" aria-label="Verified account" class="" role="img" style=" background-position: 0px -795px; background-size: auto; width: 12px; height: 12px; background-repeat: no-repeat; display: inline-block;"></i></span></strong>
+                                                                </span>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j"> @Loredana, sunt mândră de tine! Acesta este un pas mare și sunt sigur că aveți multe schimbări uimitoare înainte!
+              
+              
+                                            <div class="component_licked" style="display: flex;">
+                                                                    <span class="icons">
+                                                                        <span class="fb_licked s"></span>
+                                                                    </span>
+                                              <span class="popular">591</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                      <span class="" href=""> <img src="data:image/png;base64,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" class="rev-img" loading="lazy"> </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                          <div class="nc684nl6"><b>Mihai Trifan</b></div>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j"> Oana, tu ești principala mea motivație în fiecare zi! Mulțumesc! 💪
+            
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div style="margin-left:45px;" class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                                        <span class="" href=""> <img src="images/int2.png" class="rev-img" loading="lazy">
+                                                        </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                                                <span><strong><span style="color: #050505;">Oana Radu</span> <span class="hrs1iv20 pq6dq46d"><i data-visualcompletion="css-img" aria-label="Verified account" class="" role="img" style=" background-position: 0px -795px; background-size: auto; width: 12px; height: 12px; background-repeat: no-repeat; display: inline-block;"></i></span></strong>
+                                                                </span>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j">
+                                            @Mihai, vă mulțumesc pentru astfel de cuvinte amabile!
+              
+                                            <div class="component_licked" style="display: flex;">
+                                                                    <span class="icons">
+                                                                        <span class="fb_licked l"></span>
+                                                                        <span class="fb_licked s"></span>
+                                                                    </span>
+                                              <span class="popular">196</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+      
+                                    <div class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                      <span class="" href=""> <img src="images/commentss-2.jpg" class="rev-img" loading="lazy"> </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                          <div class="nc684nl6"><b>Adina Stoica</b></div>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j">Am primit atât de multă energie după ce am început să am grijă de sănătatea mea, Oana! Mulțumesc pentru motivație! 💥
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div style="margin-left:45px;" class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                                        <span class="" href=""> <img src="images/int2.png" class="rev-img" loading="lazy">
+                                                        </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                                                <span><strong><span style="color: #050505;">Oana Radu</span> <span class="hrs1iv20 pq6dq46d"><i data-visualcompletion="css-img" aria-label="Verified account" class="" role="img" style=" background-position: 0px -795px; background-size: auto; width: 12px; height: 12px; background-repeat: no-repeat; display: inline-block;"></i></span></strong>
+                                                                </span>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j">
+                                            @Adina, mă bucur că povestea mea te-a inspirat! Energia este cheia unei vieți depline! 💖
+              
+                                            <div class="component_licked" style="display: flex;">
+                                                                    <span class="icons">
+                                                                        <span class="fb_licked l"></span>
+                                                                        <span class="fb_licked s"></span>
+                                                                    </span>
+                                              <span class="popular">196</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+      
+                                    <div class="cta-button" style="display: flex;">
+                                      <a href="#roulette" class="terra-btn">Vreau să slăbesc!</a>
+                                    </div>
+      
+                                    <div class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                      <span class="" href=""> <img src="images/8v.jpg" class="rev-img" loading="lazy"> </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                          <div class="nc684nl6"><b>Andreea Coman</b>
+                                          </div>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j" style="position: relative;">
+                                            Ce minunat că ți-ai împărtășit calea cu noi, Oana! Am obținut deja rezultate solide și totul datorită ție, draga mea!
+                                            <br><br>
+                                            <img src="images/_com4.jpg" style="width: 100%;" alt="" loading="lazy">
+                                            <div class="component_licked" style="display: flex;">
+                                              <span class="icons"><span class="fb_licked u"></span><span class="fb_licked s"></span></span>
+                                              <span class="popular">907</span>
+                                            </div>
+                                            <!----offer_name----></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div style="margin-left:45px;" class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                                        <span class="" href=""> <img src="images/int2.png" class="rev-img" loading="lazy">
+                                                        </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                                                <span><strong><span style="color: #050505;">Oana Radu</span> <span class="hrs1iv20 pq6dq46d"><i data-visualcompletion="css-img" aria-label="Verified account" class="" role="img" style=" background-position: 0px -795px; background-size: auto; width: 12px; height: 12px; background-repeat: no-repeat; display: inline-block;"></i></span></strong>
+                                                                </span>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j">
+                                            @Andreea, este minunată! Mă bucur că povestea mea a devenit o inspirație pentru tine. <br/>Continuă să mergi înainte!
+              
+              
+                                            <div class="component_licked" style="display: flex;">
+                                                                    <span class="icons">
+                                                                        <span class="fb_licked l"></span>
+                                                                        <span class="fb_licked s"></span>
+                                                                    </span>
+                                              <span class="popular">196</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                      <span class="" href=""> <img src="images/Untitled-1.jpg" class="rev-img" loading="lazy"> </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                          <div class="nc684nl6"><b>Mihaela Mureșan</b>
+                                          </div>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j" style="position: relative;">
+                                            Oana, ești eroina mea! Mulțumită ție, am îndrăznit să încep această cale către sănătate. Iată schimbările mele!<br><br>
+                                            <img src="images/_com5.jpg" style="width: 100%;" alt="" loading="lazy">
+                                            <div class="component_licked" style="display: flex;">
+                                                                    <span class="icons">
+                                                                        <span class="fb_licked l"></span>
+                                                                        <span class="fb_licked s"></span>
+                                                                    </span>
+                                              <span class="popular">842</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div style="margin-left:45px;" class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                                        <span class="" href=""> <img src="images/int2.png" class="rev-img" loading="lazy">
+                                                        </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                                                <span><strong><span style="color: #050505;">Oana Radu</span> <span class="hrs1iv20 pq6dq46d"><i data-visualcompletion="css-img" aria-label="Verified account" class="" role="img" style=" background-position: 0px -795px; background-size: auto; width: 12px; height: 12px; background-repeat: no-repeat; display: inline-block;"></i></span></strong>
+                                                                </span>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j">
+                                            @Mihaela, ești pur și simplu uimitoare! Ține-te de lucru bun! 💪
+              
+              
+                                            <div class="component_licked" style="display: flex;">
+                                                                    <span class="icons">
+                                                                        <span class="fb_licked l"></span>
+                                                                        <span class="fb_licked s"></span>
+                                                                    </span>
+                                              <span class="popular">196</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                      <span class="" href=""> <img src="data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAAHRyWFlaAAABZAAAABRnWFlaAAABeAAAABRiWFlaAAABjAAAABRyVFJDAAABoAAAAChnVFJDAAABoAAAAChiVFJDAAABoAAAACh3dHB0AAAByAAAABRjcHJ0AAAB3AAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAFgAAAAcAHMAUgBHAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAABvogAAOPUAAAOQWFlaIAAAAAAAAGKZAAC3hQAAGNpYWVogAAAAAAAAJKAAAA+EAAC2z3BhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABYWVogAAAAAAAA9tYAAQAAAADTLW1sdWMAAAAAAAAAAQAAAAxlblVTAAAAIAAAABwARwBvAG8AZwBsAGUAIABJAG4AYwAuACAAMgAwADEANv/bAEMAAwICAwICAwMDAwQDAwQFCAUFBAQFCgcHBggMCgwMCwoLCw0OEhANDhEOCwsQFhARExQVFRUMDxcYFhQYEhQVFP/bAEMBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIADIAMgMBIgACEQEDEQH/xAAdAAACAgMBAQEAAAAAAAAAAAAABgQHAQIIBQMJ/8QANBAAAQMDAgMHAQYHAAAAAAAAAQIDEQAEBQYhBxIxEyJBUWFxkYEUMkKx0eEIFSM0cqHw/8QAGgEAAgMBAQAAAAAAAAAAAAAABAUCAwYBAP/EACIRAAICAQQCAwEAAAAAAAAAAAABAgMRBBMhMRIyQWFxof/aAAwDAQACEQMRAD8A/MeaKwIr7s2q3G1OBKuQGAQkkE+X5fIqXQQRzvRFSnrQ2yE9pIcVuEgbRG29aBgrBKYAAJ3MdPeueSO4yR6yDBr2cRpLKahuCzirJ/IOAwSw2SkepV0A9TTK9wjyeJs1XGUR2BjZpCgY/wAj0+Cfeou2EeGye3NrOOBD7Q0VrJoq4qwZSkrUEpBUo9AKsWy083b4q37UIHZguKlJKT4SoeUwn6+gpXw2P58ilhpAehfKpRHUwSPpsdvH8rv01pf+Y427yrWMGaex7wYbx7rgQ0CEglZB6wVHxjcbdKXX2+OEF6el3S4EjQ3DS41fm7e9v21s4txUshzdT6AOoneCANyNyrxANMmuMa1pXJNP4fAYy4sm2hzN3NslzfYGObmB2AO/kYma9jSx1OzqxzLZjJWtlcvwhi0RLgSgH7jYB9UyZjYSfK1cFpe95bg5F9WQQ+ntWblxttJZIURywIO4PMDCh3TKpilll0vNNvKNRXpK1S1FYf8ATxNLc93fsvsOWeHvG1m2uRjildrdNp2gBJCZg91YgwYI/CFDjHqrHNWS7WwT9oU2VqcKVAJRAAPU9dvCfmn7JYxvHOOizSs8iCXXRISTBmPpvA865K1vaN2eQS22rvOlTrgMcxKiCZPWNuh8jHjU9NBWzyAa1uqGMCzBorbmA8D80VoOTOF/cLeGSkDKZK8bKW7dPcCjO8DrsPMe81cnCyyttRcGc6zjmre3yjD7jt6WV8zty2VSglJ+7Mdn6hJPUbS9V2NvgdOfY7JK1P3jiWC0TBnm5UpAncEqVJBMwD5Ug8JtbjRPE8NkEYvJFu0UkSAtUkJcIEzzKJnfqQT0rNuUrW5Ma6K2MEvsrBerLuz4hLyGRbCCkpAbUI5UwAf97/Jrp/Fauau8Kbi2Ybu2uSGkl0tyY68wB996VP4hOBIu1K1NiZ/qgLLXTz3+tUtpXifm+HaFMtNIuGUTLDxiFeBB+f8Apr0q9xJrscQ1Oy8S5iyytc8cEYeyfbTjnMVeBZSVnlUp0bbBQO8gkR4elc/ZXGOZs3mSeIDzgKkpSruJnokfP7VI1Rf5DWOZdyl/yNKcMpZQDypB/br5x6CGnBWaV49pIR2i+UpJJ9B+gouqKpSx2KdfqN+TaWIophSShRSRBBgiirOc0u0XFEkzJ8P2opluoTZOgOIF5cJyGMSl9wJKHVEBZiRaqg+4k/NUlrFRDd6ASAEqAHl3KKKS0/BbR6o7odUXNJNc5KuVoRzbx3kfqfmuH+KrSG9UXgShKR9pUIAj8dFFSr7G8/R/or5D+3tj4lW/rsacNNmbC2nfqaKKIYrt9WTV7rV70UUVaDH/2Q==" class="rev-img" loading="lazy"> </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                          <div class="nc684nl6"><b>Andra Nistor</b>
+                                          </div>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j">
+                                            Oana, ți-ai schimbat nu numai viața, ci și viața tuturor abonaților tăi! Suntem cu toții inspirați de tine! ✨  </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div style="margin-left: 45px;" class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                      <span class="" href=""> <img src="images/int2.png" class="rev-img" loading="lazy"> </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                        <span><strong><span style="color: #050505;">Oana Radu</span> <span class="hrs1iv20 pq6dq46d"><i data-visualcompletion="css-img" aria-label="Verified account" class="" role="img" style=" background-position: 0px -795px; background-size: auto; width: 12px; height: 12px; background-repeat: no-repeat; display: inline-block;"></i></span></strong>
+                                        </span>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j">@Andra, cuvintele tale înseamnă mult pentru mine! 💖</div>
+                                        </div>
+                                      </div>
+                                    </div>
+      
+      
+      
+      
+                                    <div class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                      <span class="" href=""> <img src="images/new_com_8.jpg" class="rev-img" loading="lazy"> </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                          <div class="nc684nl6"><b>Irina Bălan</b>
+                                          </div>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j" style="position: relative;">
+                                            Nu-mi vine să cred cât de activă am devenit după ce am început să am grijă de sănătatea mea cu ajutorul tău, Oana! Ești adevărata Mea eroină! 💥
+              
+                                            <br><br>
+              
+                                            <div class="component_licked" style="display: flex;">
+                                                                    <span class="icons">
+                                                                        <span class="fb_licked l"></span>
+                                                                    </span>
+                                              <span class="popular">107</span>
+                                            </div>
+                                            <!----offer_name----></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div style="margin-left: 45px;" class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                      <span class="" href=""> <img src="images/int2.png" class="rev-img" loading="lazy"> </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                        <span><strong><span style="color: #050505;">Oana Radu</span> <span class="hrs1iv20 pq6dq46d"><i data-visualcompletion="css-img" aria-label="Verified account" class="" role="img" style=" background-position: 0px -795px; background-size: auto; width: 12px; height: 12px; background-repeat: no-repeat; display: inline-block;"></i></span></strong>
+                                        </span>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j">@Irina, o viață activă este ceea ce avem nevoie cu toții! Mă bucur că pot fi o inspirație pentru tine! 🌟
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+      
+                                    <div class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                      <span class="" href=""> <img src="images/new_com_7.jpg" class="rev-img" loading="lazy"> </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                          <div class="nc684nl6"><b>Elena Preda</b>
+                                          </div>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j" style="position: relative;">
+                                            Oana, datorită poveștii tale și Fortunella, mi-am început călătoria către sănătate. Familia mea este încântată de schimbările mele! Așa m-am schimbat!
+                                            <br><br>
+                                            <img src="images/Comm5.jpeg" style="width: 100%;" alt="" loading="lazy">
+                                            <div class="component_licked" style="display: flex;">
+                                                                    <span class="icons">
+                                                                        <span class="fb_licked l"></span>
+                                                                        <span class="fb_licked u"></span>
+                                                                        <span class="fb_licked s"></span>
+                                                                    </span>
+                                              <span class="popular">1037</span>
+                                            </div>
+                                            <!----offer_name----></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div style="margin-left: 45px;" class="l9j0dhe7 ecm0bbzt rz4wbd8a qt6c0cv9  j83agx80 btwxx1t3 lzcic4wl">
+                                      <span class="" href=""> <img src="images/int2.png" class="rev-img" loading="lazy"> </span>
+                                      <div class="b3i9ofy5 e72ty7fz qlfml3jp inkptoze qmr60zad rq0escxv oo9gr5id q9uorilb kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x d2edcug0 jm1wdb64 l9j0dhe7 l3itjdph qv66sw1b">
+                                        <div class="tw6a2znq sj5x9vvc d1544ag0 cxgpxx05">
+                                        <span><strong><span style="color: #050505;">Oana Radu</span> <span class="hrs1iv20 pq6dq46d"><i data-visualcompletion="css-img" aria-label="Verified account" class="" role="img" style=" background-position: 0px -795px; background-size: auto; width: 12px; height: 12px; background-repeat: no-repeat; display: inline-block;"></i></span></strong>
+                                        </span>
+                                          <div class="ecm0bbzt e5nlhep0 a8c37x1j">@Elena, modificările dvs. sunt vizibile dintr-o privire! Continuați să vă mulțumiți familia și să mergeți mai departe!
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+      
+                                    <div class="cta-button" style="display: flex;">
+                                      <a href="#roulette" class="terra-btn">Vreau să slăbesc!</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+                          
+                          
+                          
+                          
+                        </div>
+
+
+		                      
+		                
+	                    <div style="margin: 10px 0 0 0; border-top: 1px solid #ccc;">
+	
+</div>
+
+	                        <div class="author-card__wrapper">
+                </div>
+
+                        
+
+                        <div class="single__under mg-top-20">
+			                	    <div class="headline">Iți recomandăm</div>
+    <div class="articles articles--sm-2-c">
+		            <div class="article article--xs-list">
+
+                <div class="article__media width-xs-100 mg-xs-right-10 mg-sm-bottom-10">
+                    <a href="#roulette">
+	                    <picture>
+<source type="image/webp" media="(max-width:500px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FWhatsApp-Image-2024-01-03-at-13.17.44-1200x850_2.jpeg">
+<source type="image/jpeg" media="(max-width:500px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FWhatsApp-Image-2024-01-03-at-13.17.44-1200x850_4.jpeg">
+<source type="image/webp" media="(max-width:768px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FWhatsApp-Image-2024-01-03-at-13.17.44-1200x850.jpeg">
+<source type="image/jpeg" media="(max-width:768px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FWhatsApp-Image-2024-01-03-at-13.17.44-1200x850_5.jpeg">
+<source type="image/webp" media="(min-width:769px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FWhatsApp-Image-2024-01-03-at-13.17.44-1200x850.jpeg">
+<source type="image/jpeg" media="(min-width:769px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FWhatsApp-Image-2024-01-03-at-13.17.44-1200x850_5.jpeg">
+<img width="350" height="197" src="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FWhatsApp-Image-2024-01-03-at-13.17.44-1200x850.jpeg" alt="Se repetă poveștile de la Hollywood! Colega l-a dat de gol pe BRomania: “Avem un copil împreună!”">
+</picture>						                    </a>
+                    <div class="article__category float">Showbiz intern</div>
+                </div>
+                <div class="article__content">
+                    <div class="article__title font-size-md-21">
+                        <a href="#roulette">Se repetă poveștile de la Hollywood! Colega l-a dat de gol pe BRomania: “Avem un copil împreună!”</a>
+                    </div>
+                </div>
+
+            </div>
+					            <div class="article article--xs-list">
+
+                <div class="article__media width-xs-100 mg-xs-right-10 mg-sm-bottom-10">
+                    <a href="#roulette">
+	                    <picture>
+<source type="image/webp" media="(max-width:500px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252Fcancan-2_-borcea-bianca-dragusanu-1200x850_3.png">
+<source type="image/jpeg" media="(max-width:500px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252Fcancan-2_-borcea-bianca-dragusanu-1200x850_2.png">
+<source type="image/webp" media="(max-width:768px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252Fcancan-2_-borcea-bianca-dragusanu-1200x850.png">
+<source type="image/jpeg" media="(max-width:768px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252Fcancan-2_-borcea-bianca-dragusanu-1200x850_1.png">
+<source type="image/webp" media="(min-width:769px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252Fcancan-2_-borcea-bianca-dragusanu-1200x850.png">
+<source type="image/jpeg" media="(min-width:769px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252Fcancan-2_-borcea-bianca-dragusanu-1200x850_1.png">
+<img width="350" height="197" src="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252Fcancan-2_-borcea-bianca-dragusanu-1200x850.png" alt="Întâlnire de gradul III la sală: Cristi Borcea &#8211; Bianca Drăgușanu! Gabi Bădălău a intrat agitat în 2024">
+</picture>						                    </a>
+                    <div class="article__category float">Vedete</div>
+                </div>
+                <div class="article__content">
+                    <div class="article__title font-size-md-21">
+                        <a href="#roulette">Întâlnire de gradul III la sală: Cristi Borcea &#8211; Bianca Drăgușanu! Gabi Bădălău a intrat agitat în 2024</a>
+                    </div>
+                </div>
+
+            </div>
+					    </div>
+                        </div>
+
+                       
+
+                        <div class="single__under mg-top-20 mg-bottom-20">
+			                <div class="widget widget_strawberry_feeds_manager_positions_widget">    <div data-template="Cross Two Columns" class="relative mg-bottom-20">
+		
+        <div class="articles articles--xs-h articles--sm-2-c">
+			                <div class="article article--xs-list">
+					                        <div class="article__media mg-xs-right-10 mg-sm-bottom-10 width-xs-100 ">
+                            <a rel="noopener " target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gtag('event', 'feed', { 'event_category': 'Parteneriate', 'event_label': 'CE SE ÎNTÂMPLĂ DOCTORE?', 'non_interaction': true});" href="#roulette" data-cf-modified-936ae0b3af0c7d6f45be7c3b->
+	                           <picture>
+<source type="image/webp" media="(max-width:500px)" srcset="images/14-main-1704279411-1704279356-t_2.jpg">
+<source type="image/jpeg" media="(max-width:500px)" srcset="images/14-main-1704279411-1704279356-t_3.jpg">
+<source type="image/webp" media="(max-width:768px)" srcset="images/14-main-1704279411-1704279356-t.jpg">
+<source type="image/jpeg" media="(max-width:768px)" srcset="images/14-main-1704279411-1704279356-t_1.jpg">
+<source type="image/webp" media="(min-width:769px)" srcset="images/14-main-1704279411-1704279356-t.jpg">
+<source type="image/jpeg" media="(min-width:769px)" srcset="images/14-main-1704279411-1704279356-t_1.jpg">
+<img width="400" height="225" src="images/14-main-1704279411-1704279356-t.jpg" class="img-responsive" loading="lazy" alt="Adevărul despre legumele congelate. Medic: Din punct de vedere nutrițional, sunt…">
+</picture>                            </a>
+                            <div class="article__category float dark">CE SE ÎNTÂMPLĂ DOCTORE?</div>
+                        </div>
+					                    <div class="article__content">
+                        <div class="article__title font-size-smb-18 article__title--bold">
+                            <a rel="noopener " target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gtag('event', 'feed', { 'event_category': 'Parteneriate', 'event_label': 'CE SE ÎNTÂMPLĂ DOCTORE?', 'non_interaction': true});" href="#roulette" data-cf-modified-936ae0b3af0c7d6f45be7c3b->Adevărul despre legumele congelate. Medic: Din punct de vedere nutrițional, sunt…</a>
+                        </div>
+                    </div>
+                </div>
+			                <div class="article article--xs-list">
+					                        <div class="article__media mg-xs-right-10 mg-sm-bottom-10 width-xs-100 ">
+                            <a rel="noopener " target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gtag('event', 'feed', { 'event_category': 'Parteneriate', 'event_label': 'Prosport.ro', 'non_interaction': true});" href="#roulette" data-cf-modified-936ae0b3af0c7d6f45be7c3b->
+	                           <picture>
+<source type="image/webp" media="(max-width:500px)" srcset="images/sarah-1704096269-1704096269-t_3.jpg">
+<source type="image/jpeg" media="(max-width:500px)" srcset="images/sarah-1704096269-1704096269-t_2.jpg">
+<source type="image/webp" media="(max-width:768px)" srcset="images/sarah-1704096269-1704096269-t.jpg">
+<source type="image/jpeg" media="(max-width:768px)" srcset="images/sarah-1704096269-1704096269-t_1.jpg">
+<source type="image/webp" media="(min-width:769px)" srcset="images/sarah-1704096269-1704096269-t.jpg">
+<source type="image/jpeg" media="(min-width:769px)" srcset="images/sarah-1704096269-1704096269-t_1.jpg">
+<img width="400" height="225" src="images/sarah-1704096269-1704096269-t.jpg" class="img-responsive" loading="lazy" alt="FOTO. Imagini incendiare cu fata Anamariei Prodan, în costum de baie, la Dubai!">
+</picture>                            </a>
+                            <div class="article__category float dark">Prosport.ro</div>
+                        </div>
+					                    <div class="article__content">
+                        <div class="article__title font-size-smb-18 article__title--bold">
+                            <a rel="noopener " target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gtag('event', 'feed', { 'event_category': 'Parteneriate', 'event_label': 'Prosport.ro', 'non_interaction': true});" href="#roulette" data-cf-modified-936ae0b3af0c7d6f45be7c3b->FOTO. Imagini incendiare cu fata Anamariei Prodan, în costum de baie, la Dubai!</a>
+                        </div>
+                    </div>
+                </div>
+			                <div class="article article--xs-list">
+					                        <div class="article__media mg-xs-right-10 mg-sm-bottom-10 width-xs-100 ">
+                            <a rel="noopener nofollow" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gtag('event', 'feed', { 'event_category': 'Parteneriate', 'event_label': 'Digi24', 'non_interaction': true});" href="#roulette" data-cf-modified-936ae0b3af0c7d6f45be7c3b->
+	                           <picture>
+<source type="image/webp" media="(max-width:500px)" srcset="images/jnpjptemagfzad0yytczngnmzmnmm2u1zte4mdi2njnhowy1mmq2mzjlyq-thumb-1704284325-t_1.jpg">
+<source type="image/jpeg" media="(max-width:500px)" srcset="images/jnpjptemagfzad0yytczngnmzmnmm2u1zte4mdi2njnhowy1mmq2mzjlyq-thumb-1704284325-t_3.jpg">
+<source type="image/webp" media="(max-width:768px)" srcset="images/jnpjptemagfzad0yytczngnmzmnmm2u1zte4mdi2njnhowy1mmq2mzjlyq-thumb-1704284325-t.jpg">
+<source type="image/jpeg" media="(max-width:768px)" srcset="images/jnpjptemagfzad0yytczngnmzmnmm2u1zte4mdi2njnhowy1mmq2mzjlyq-thumb-1704284325-t_2.jpg">
+<source type="image/webp" media="(min-width:769px)" srcset="images/jnpjptemagfzad0yytczngnmzmnmm2u1zte4mdi2njnhowy1mmq2mzjlyq-thumb-1704284325-t.jpg">
+<source type="image/jpeg" media="(min-width:769px)" srcset="images/jnpjptemagfzad0yytczngnmzmnmm2u1zte4mdi2njnhowy1mmq2mzjlyq-thumb-1704284325-t_2.jpg">
+<img width="400" height="225" src="images/jnpjptemagfzad0yytczngnmzmnmm2u1zte4mdi2njnhowy1mmq2mzjlyq-thumb-1704284325-t.jpg" class="img-responsive" loading="lazy" alt="Cod galben de ninsori viscolite și vânt puternic până vineri. Un val de aer rece va cuprinde România și va fi ger">
+</picture>                            </a>
+                            <div class="article__category float dark">Digi24</div>
+                        </div>
+					                    <div class="article__content">
+                        <div class="article__title font-size-smb-18 article__title--bold">
+                            <a rel="noopener nofollow" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gtag('event', 'feed', { 'event_category': 'Parteneriate', 'event_label': 'Digi24', 'non_interaction': true});" href="#roulette" data-cf-modified-936ae0b3af0c7d6f45be7c3b->Cod galben de ninsori viscolite și vânt puternic până vineri. Un val de...</a>
+                        </div>
+                    </div>
+                </div>
+			                <div class="article article--xs-list">
+					                        <div class="article__media mg-xs-right-10 mg-sm-bottom-10 width-xs-100 ">
+                            <a rel="noopener nofollow" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gtag('event', 'feed', { 'event_category': 'Parteneriate', 'event_label': 'Fanatik.ro', 'non_interaction': true});" href="#roulette" data-cf-modified-936ae0b3af0c7d6f45be7c3b->
+	                           <picture>
+<source type="image/webp" media="(max-width:500px)" srcset="images/plante-1704269538-t_2.jpg">
+<source type="image/jpeg" media="(max-width:500px)" srcset="images/plante-1704269538-t_3.jpg">
+<source type="image/webp" media="(max-width:768px)" srcset="images/plante-1704269538-t.jpg">
+<source type="image/jpeg" media="(max-width:768px)" srcset="images/plante-1704269538-t_1.jpg">
+<source type="image/webp" media="(min-width:769px)" srcset="images/plante-1704269538-t.jpg">
+<source type="image/jpeg" media="(min-width:769px)" srcset="images/plante-1704269538-t_1.jpg">
+<img width="400" height="225" src="images/plante-1704269538-t.jpg" class="img-responsive" loading="lazy" alt="Planta pe care trebuie neapărat să o ai in casă în luna ianuarie. Așa vei atrage norocul în viața ta">
+</picture>                            </a>
+                            <div class="article__category float dark">Fanatik.ro</div>
+                        </div>
+					                    <div class="article__content">
+                        <div class="article__title font-size-smb-18 article__title--bold">
+                            <a rel="noopener nofollow" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gtag('event', 'feed', { 'event_category': 'Parteneriate', 'event_label': 'Fanatik.ro', 'non_interaction': true});" href="#roulette" data-cf-modified-936ae0b3af0c7d6f45be7c3b->Planta pe care trebuie neapărat să o ai in casă în luna ianuarie....</a>
+                        </div>
+                    </div>
+                </div>
+			        </div>
+    </div>
+</div>                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 hidden-smb width-md-300">
+                    <div class="widget mg-bottom-20 widget_strawberry_sticky_posts_widget" style="position: sticky; top: 80px;">    <div data-template="List Latest" class="articles mg-bottom-20">
+		            <div class="headline font-weight-md-900"> ULTIMA ORĂ</div>
+		        <div class="articles--smo-2-c">
+		            <div class="article article--list">
+                <div class="article__content">
+					        <div class="article__title light font-size-smo-18 font-size-md-16">
+            <a href="#roulette">Se complică situația în cazul Ferma Dacilor după ultimele dezvăluiri. Undă de șoc produsă de <a href><u>...</u></a></a>
+        </div>
+		                </div>
+                <div class="article__media width-smb-100 width-md-100  mg-left-10">
+                    <a href="#roulette">
+			            <picture>
+<source type="image/webp" media="(max-width:500px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FCornel-Dinicu_1.jpg">
+<source type="image/jpeg" media="(max-width:500px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FCornel-Dinicu_2.jpg">
+<source type="image/webp" media="(max-width:768px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FCornel-Dinicu_1.jpg">
+<source type="image/jpeg" media="(max-width:768px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FCornel-Dinicu_2.jpg">
+<source type="image/webp" media="(min-width:769px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FCornel-Dinicu.jpg">
+<source type="image/jpeg" media="(min-width:769px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FCornel-Dinicu_3.jpg">
+<img width="100" height="56" src="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FCornel-Dinicu.jpg" loading="lazy" alt="Se complică situația în cazul Ferma Dacilor după ultimele dezvăluiri. Undă de șoc produsă de un localnic din Gura Vadului">
+</picture>                    </a>
+                </div>
+            </div>
+			            <div class="article article--list">
+                <div class="article__content">
+					        <div class="article__title light font-size-smo-18 font-size-md-16">
+            <a href="#roulette">Se repetă poveștile de la Hollywood! Colega l-a dat de gol pe BRomania: “Avem un copil împreună!”</a>
+        </div>
+		                </div>
+                <div class="article__media width-smb-100 width-md-100  mg-left-10">
+                    <a href="#roulette">
+			            <picture>
+<source type="image/webp" media="(max-width:500px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FWhatsApp-Image-2024-01-03-at-13.17.44-1200x850_3.jpeg">
+<source type="image/jpeg" media="(max-width:500px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FWhatsApp-Image-2024-01-03-at-13.17.44-1200x850_6.jpeg">
+<source type="image/webp" media="(max-width:768px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FWhatsApp-Image-2024-01-03-at-13.17.44-1200x850_3.jpeg">
+<source type="image/jpeg" media="(max-width:768px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FWhatsApp-Image-2024-01-03-at-13.17.44-1200x850_6.jpeg">
+<source type="image/webp" media="(min-width:769px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FWhatsApp-Image-2024-01-03-at-13.17.44-1200x850_1.jpeg">
+<source type="image/jpeg" media="(min-width:769px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FWhatsApp-Image-2024-01-03-at-13.17.44-1200x850_7.jpeg">
+<img width="100" height="56" src="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FWhatsApp-Image-2024-01-03-at-13.17.44-1200x850_1.jpeg" loading="lazy" alt="Se repetă poveștile de la Hollywood! Colega l-a dat de gol pe BRomania: “Avem un copil împreună!”">
+</picture>                    </a>
+                </div>
+            </div>
+			            <div class="article article--list">
+                <div class="article__content">
+					        <div class="article__title light font-size-smo-18 font-size-md-16">
+            <a href="#roulette">Harta| Prognoza meteo se schimbă brusc! ANM a emis cod galben pentru mai multe regiuni din România</a>
+        </div>
+		                </div>
+                <div class="article__media width-smb-100 width-md-100  mg-left-10">
+                    <a href="#roulette">
+			            <picture>
+<source type="image/webp" media="(max-width:500px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252Fvreme-4_1.jpg">
+<source type="image/jpeg" media="(max-width:500px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252Fvreme-4_2.jpg">
+<source type="image/webp" media="(max-width:768px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252Fvreme-4_1.jpg">
+<source type="image/jpeg" media="(max-width:768px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252Fvreme-4_2.jpg">
+<source type="image/webp" media="(min-width:769px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252Fvreme-4.jpg">
+<source type="image/jpeg" media="(min-width:769px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252Fvreme-4_3.jpg">
+<img width="100" height="56" src="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252Fvreme-4.jpg" loading="lazy" alt="Harta| Prognoza meteo se schimbă brusc! ANM a emis cod galben pentru mai multe regiuni din România">
+</picture>                    </a>
+                </div>
+            </div>
+			            <div class="article article--list">
+                <div class="article__content">
+					        <div class="article__title light font-size-smo-18 font-size-md-16">
+            <a href="#roulette">Salvarea a venit de la Lidl pentru Inna. Cântăreața din România a renunțat la un brand de încălțăminte <a href><u>...</u></a></a>
+        </div>
+		                </div>
+                <div class="article__media width-smb-100 width-md-100  mg-left-10">
+                    <a href="#roulette">
+			            <picture>
+<source type="image/webp" media="(max-width:500px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FInna_1.jpg">
+<source type="image/jpeg" media="(max-width:500px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FInna_3.jpg">
+<source type="image/webp" media="(max-width:768px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FInna_1.jpg">
+<source type="image/jpeg" media="(max-width:768px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FInna_3.jpg">
+<source type="image/webp" media="(min-width:769px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FInna.jpg">
+<source type="image/jpeg" media="(min-width:769px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FInna_2.jpg">
+<img width="100" height="56" src="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FInna.jpg" loading="lazy" alt="Salvarea a venit de la Lidl pentru Inna. Cântăreața din România a renunțat la un brand de încălțăminte celebru pentru adidașii tricolori">
+</picture>                    </a>
+                </div>
+            </div>
+			            <div class="article article--list">
+                <div class="article__content">
+					        <div class="article__title light font-size-smo-18 font-size-md-16">
+            <a href="#roulette">S-a prăbușit Simona Halep! Jucătoarea de tenis se confruntă cu probleme serioase de sănătate după <a href><u>...</u></a></a>
+        </div>
+		                </div>
+                <div class="article__media width-smb-100 width-md-100  mg-left-10">
+                    <a href="#roulette">
+			            <picture>
+<source type="image/webp" media="(max-width:500px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FSimona-Halep-pe-patul-de-spital-in-2018-dupa-Australian-Open_1.jpg">
+<source type="image/jpeg" media="(max-width:500px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FSimona-Halep-pe-patul-de-spital-in-2018-dupa-Australian-Open_2.jpg">
+<source type="image/webp" media="(max-width:768px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FSimona-Halep-pe-patul-de-spital-in-2018-dupa-Australian-Open_1.jpg">
+<source type="image/jpeg" media="(max-width:768px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FSimona-Halep-pe-patul-de-spital-in-2018-dupa-Australian-Open_2.jpg">
+<source type="image/webp" media="(min-width:769px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FSimona-Halep-pe-patul-de-spital-in-2018-dupa-Australian-Open.jpg">
+<source type="image/jpeg" media="(min-width:769px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FSimona-Halep-pe-patul-de-spital-in-2018-dupa-Australian-Open_3.jpg">
+<img width="100" height="56" src="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FSimona-Halep-pe-patul-de-spital-in-2018-dupa-Australian-Open.jpg" loading="lazy" alt="S-a prăbușit Simona Halep! Jucătoarea de tenis se confruntă cu probleme serioase de sănătate după suspendarea de 4 ani">
+</picture>                    </a>
+                </div>
+            </div>
+			            <div class="article article--list">
+                <div class="article__content">
+					        <div class="article__title light font-size-smo-18 font-size-md-16">
+            <a href="#roulette">Mii de români alertați de dispariția a trei bănci! În 2024 vor avea loc mișcări importante pe <a href><u>...</u></a></a>
+        </div>
+		                </div>
+                <div class="article__media width-smb-100 width-md-100  mg-left-10">
+                    <a href="#roulette">
+			            <picture>
+<source type="image/webp" media="(max-width:500px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FCe-se-intampla-cu-unele-banci-in-2024_2.jpg">
+<source type="image/jpeg" media="(max-width:500px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FCe-se-intampla-cu-unele-banci-in-2024_1.jpg">
+<source type="image/webp" media="(max-width:768px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FCe-se-intampla-cu-unele-banci-in-2024_2.jpg">
+<source type="image/jpeg" media="(max-width:768px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FCe-se-intampla-cu-unele-banci-in-2024_1.jpg">
+<source type="image/webp" media="(min-width:769px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FCe-se-intampla-cu-unele-banci-in-2024.jpg">
+<source type="image/jpeg" media="(min-width:769px)" srcset="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FCe-se-intampla-cu-unele-banci-in-2024_3.jpg">
+<img width="100" height="56" src="images/https%253A%252F%252Fwww.cancan.ro%252Fwp-content%252Fuploads%252F2024%252F01%252FCe-se-intampla-cu-unele-banci-in-2024.jpg" loading="lazy" alt="Mii de români alertați de dispariția a trei bănci! În 2024 vor avea loc mișcări importante pe piața financiară din țara noastră">
+</picture>                    </a>
+                </div>
+            </div>
+			        </div>
+
+        <div class="cta"><a href="#roulette">Vezi toate știrile</a></div>
+    </div>
+</div>           </div>
+            </div>
+            <div class="single__under mg-top-20 mg-bottom-20">
+		        <div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><script type="000d235f75533fbdb6abdf6b6-text/javascript" src="js/scriptcan.js"></script></div></div>            </div>
+        </div>
+
+    </div>
+
+    <section id="last" class="mg-xs-top-10 mg-sm-top-20">
+        <div class="container">
+			        </div>
+    </section>
+
+
+
+
+<footer class="footer">
+    <div class="container">
+        <section>
+                <nav class="menu">
+                    <ul>
+				        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-20779340"><a href="#roulette">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-20693607"><a href="#roulette">Exclusiv</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20693608"><a href="#roulette">Sport</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20693609"><a href="#roulette">Știri</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20693610"><a href="#roulette">Video</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20693611"><a href="#roulette">Horoscop</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-20693612"><a href="#roulette">Vedete</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20794103"><a href="#roulette">Paparazzi</a></li>
+                    </ul>
+                </nav>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="tip">
+                    <a href="#roulette" class="cta">Ai un pont?</a>
+                    <span class="contact">
+                        <a rel="noopener noreferrer" style="color: #fff;text-decoration: underline;" target="_blank" href="#roulette">Scrie-ne pe Whatsapp</a></span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <nav class="menu">
+                <ul>
+                    <li id="menu-item-20693630" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20693630"><a href="#roulette">Știri interne</a></li>
+<li id="menu-item-20693631" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20693631"><a href="#roulette">Știri externe</a></li>
+<li id="menu-item-20693632" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20693632"><a href="#roulette">Politica</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section>
+            <nav class="menu">
+                <ul>
+                    <li id="menu-item-20693614" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20693614"><a href="#roulette">Ultimele stiri</a></li>
+<li id="menu-item-20693615" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20693615"><a href="#roulette">Diete</a></li>
+<li id="menu-item-20693616" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20693616"><a href="#roulette">Insula Iubirii</a></li>
+<li id="menu-item-20693617" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20693617"><a href="#roulette">Dictionar de vise</a></li>
+<li id="menu-item-20693618" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20693618"><a href="#roulette">Horoscop Zilnic</a></li>
+<li id="menu-item-20693619" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20693619"><a href="#roulette">LOTO</a></li>
+<li id="menu-item-20725949" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20725949"><a href="#roulette">LIFE STYLE</a></li>
+<li id="menu-item-20693620" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20693620"><a href="#roulette">Curs valutar</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section>
+            <nav class="menu">
+                <ul>
+				    <li id="menu-item-20925834" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20925834"><a href="#roulette">Echipa editorială</a></li>
+<li id="menu-item-20693621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20693621"><a href="#roulette">Termeni si condiții</a></li>
+<li id="menu-item-20693622" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20693622"><a href="#roulette">Politica de confidențialitate</a></li>
+<li id="menu-item-20693623" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20693623"><a href="#roulette">Politica privind Cookie-urile</a></li>
+<li id="menu-item-20693626" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20693626"><a href="#roulette">Despre noi</a></li>
+<li id="menu-item-20693625" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20693625"><a href="#roulette">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="copyright text-center">
+            <div class="container">
+                <p>© 2020 - Toate drepturile rezervate<br>GANDUL MEDIA NETWORK SRL, Adresa: București, Sos Fabrica de Glucoză, nr. 21, parter, sector 2, J40/631/2016, CIF: RO35451445</p>
+                <p>Decizia ONJN  nr. 1598/16.09.2021. Jocurile de noroc sunt interzise minorilor.</p>
+            </div>
+        </section>
+    </div>
+</footer>
+<div id="modal-search" class="modalbox hidden">
+	<div class="modalbox__content">
+		<div class="modalbox__close"><a href="javascript:void(0)" class="modalbox-close"><span class="icon-cross"></span></a></div>
+		<h5>Cautare</h5>
+		<p>Introdu cuvântul căutat și apasă ENTER</p>
+		<form action="https://www.cancan.ro/" class="form">
+			<input placeholder="Caută..." class="input" name="s" type="text">
+		</form>
+	</div>
+</div><div id="modal-share" class="modalbox hidden">
+	<div class="modalbox__content">
+		<div class="modalbox__close"><a href="javascript:void(0)" class="modalbox-close"><span class="icon-cross"></span></a></div>
+
+
+		<div class="modalbox__list">
+			<ul>
+				<li><a target="_blank" href="#roulette"><span class="icon-facebook color--facebook"></span> Facebook</a></li>
+				<li><a target="_blank" href="#roulette"><span class="icon-instagram color--instagram"></span> Instagram</a></li>
+				<li><a target="_blank" href="#roulette"><span class="icon-twitter color--twitter"></span> Twitter</a></li>
+				<li><a target="_blank" href="#roulette"><span class="icon-youtube color--youtube"></span> Youtube</a></li>
+			</ul>
+		</div>
+	</div>
+</div><nav class="hidden" id="pushmenu">
+    <div class="pushmenu-close"><a href="javscript:void(0)">Inchide <span></span></a></div>
+    <div class="pushmenu-content">
+
+        <div class="pushmenu-search">
+            <form action="/">
+                <input class="input" type="text" name="s" placeholder="cautare...">
+            </form>
+        </div>
+        <div class="pushmenu-menu">
+            <ul>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-20779340"><a href="#roulette">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-20693607"><a href="#roulette">Exclusiv</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20693608"><a href="#roulette">Sport</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20693609"><a href="#roulette">Știri</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20693610"><a href="#roulette">Video</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20693611"><a href="#roulette">Horoscop</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-20693612"><a href="#roulette">Vedete</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20794103"><a href="#roulette">Paparazzi</a></li>
+            </ul>
+        </div>
+
+        <div class="pushmenu-pages">
+            <ul>
+				<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20693630"><a href="#roulette">Știri interne</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20693631"><a href="#roulette">Știri externe</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20693632"><a href="#roulette">Politica</a></li>
+            </ul>
+        </div>
+
+        <div class="pushmenu-social">
+            <a target="_blank" href="#roulette" class="icon-facebook bg--facebook"></a>
+            <a target="_blank" href="#roulette" class="icon-instagram bg--instagram"></a>
+            <a target="_blank" href="#roulette" class="icon-twitter bg--twitter"></a>
+            <a target="_blank" href="#roulette" class="icon-youtube bg--youtube"></a>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+<div id="svp"></div>
+
+<script type="936ae0b3af0c7d6f45be7c3b-text/javascript" src="js/jquery.js" id="jquery-js"></script>
+<script type="936ae0b3af0c7d6f45be7c3b-text/javascript" src="js/scripts-a.js" id="strawberry-minify-script-single-js"></script>
+<script type="936ae0b3af0c7d6f45be7c3b-text/javascript" defer async src="js/index.js" id="svp_enqueue_front_scripts-js"></script>
+<script src="js/boxes.js" defer></script>
+
+
+
+    <!-- only on mobile -->
+    <div data-ad="cancan.ro_sticky_mobile_bottom" data-devices="m:1,t:0,d:0" class="demand-supply hidden-md hidden-lg"></div>
+
+    <!-- only on desktop -->
+    <div data-ad="cancan.ro_300x250_sticky_display_left" data-devices="m:0,t:0,d:1" class="demand-supply hidden-xs hidden-sm"></div>
+
+
+<script src="js/rocket-loader.min.js" data-cf-settings="936ae0b3af0c7d6f45be7c3b-|49" defer></script></body>
+
+</body>
+</html>
